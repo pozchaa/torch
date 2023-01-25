@@ -1,0 +1,98 @@
+.footer__body {
+  height: 7.07em;
+  padding-bottom: 1.78em;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.footer__list {
+  display: flex;
+}
+
+.footer__list {
+  max-width: 64.28em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__list-item {
+  font-family: 'Montserrat Regular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.footer__list-item a {
+  color: #191919;
+  text-decoration: none;
+}
+
+.footer__contacts {
+  max-width: 13.57em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__contacts-item a {
+  position: relative;
+}
+
+.footer__contacts-vk::before {
+  width: 2.71em;
+  height: 2.71em;
+  background-image: url('../img-css/footer/vkontakte.svg');
+
+  box-sizing: border-box;
+  content: '';
+  position: absolute;
+  top: -2.61em;
+  left: -0.05em;
+
+  background-size: cover;
+}
+
+.footer__contacts-inst::before {
+  width: 2.71em;
+  height: 2.71em;
+  background-image: url('../img-css/footer/instagram.svg');
+
+  box-sizing: border-box;
+  content: '';
+  position: absolute;
+  top: -2.61em;
+  left: -0.98em;
+
+  background-size: cover;
+}
+
+.footer__contacts-tg::before {
+  width: 2.71em;
+  height: 2.71em;
+  background-image: url('../img-css/footer/telegram.svg');
+
+  box-sizing: border-box;
+  content: '';
+  position: absolute;
+  top: -2.61em;
+  left: -1.78em;
+
+  background-size: cover;
+}
+
+.footer__contacts-youtube::before {
+  width: 2.71em;
+  height: 2.71em;
+  background-image: url('../img-css/footer/youtube.svg');
+
+  box-sizing: border-box;
+  content: '';
+  position: absolute;
+  top: -2.61em;
+  left: -2.72em;
+
+  background-size: cover;
+}

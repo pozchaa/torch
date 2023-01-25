@@ -1,0 +1,105 @@
+.cards-list {
+  display: grid;
+  grid-template-columns: repeat(4, 21.83em);
+  column-gap: 0.42em;
+  row-gap: 1.42em;
+}
+
+.card {
+  width: 21.83em;
+  height: 28.79em;
+  text-align: left;
+}
+
+.card__body {
+  position: relative;
+  /* padding: 0.6em 0.97em 0.8em; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 0.2em;
+}
+
+.card__header {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0.6em 0.97em 0.8em;
+}
+
+.card__sale {
+  font-family: 'Montserrat Regular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #191919;
+}
+
+.card__zoom-btn {
+  width: 1.71em;
+  height: 1.71em;
+
+  cursor: pointer;
+  border: none;
+  background-image: url('../img-css/card/card-zoom.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.card__img-block {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+}
+
+.card__img-block img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.card__block-btn {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  padding: 0.6em 0.97em 0.8em;
+  justify-content: end;
+}
+
+.card__forever-btn {
+  width: 1.71em;
+  height: 1.71em;
+
+  cursor: pointer;
+  border: none;
+  background-image: url('../img-css/card/card-heart.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.card__name {
+  font-family: 'Montserrat Medium';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #191919;
+
+  margin-bottom: 0.2em;
+}
+
+.card__price {
+  font-family: 'Montserrat Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #191919;
+}
