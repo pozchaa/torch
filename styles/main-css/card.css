@@ -1,6 +1,6 @@
 .cards-list {
   display: grid;
-  grid-template-columns: repeat(4, 21.83em);
+  grid-template-columns: repeat(auto-fit, minmax(21.83em, 1fr));
   column-gap: 0.42em;
   row-gap: 1.42em;
 }
@@ -9,6 +9,7 @@
   width: 21.83em;
   height: 28.79em;
   text-align: left;
+  margin: 0 auto;
 }
 
 .card__body {
@@ -28,6 +29,17 @@
   width: 100%;
   justify-content: space-between;
   padding: 0.6em 0.97em 0.8em;
+  box-sizing: border-box;
+}
+
+.card__img {
+  /* width: 100%; */
+}
+
+.card__img img {
+  /* max-height: 345;
+  width: 100%;
+  object-fit: contain; */
 }
 
 .card__sale {
@@ -49,6 +61,13 @@
   background-image: url('../img-css/card/card-zoom.svg');
   background-position: center center;
   background-repeat: no-repeat;
+  transition: 0.3s ease-in-out;
+
+  background-color: transparent;
+}
+
+.card__zoom-btn:hover {
+  transform: scale(1.11);
 }
 
 .card__img-block {
@@ -70,6 +89,8 @@
   display: flex;
   padding: 0.6em 0.97em 0.8em;
   justify-content: end;
+
+  box-sizing: border-box;
 }
 
 .card__forever-btn {
@@ -78,9 +99,29 @@
 
   cursor: pointer;
   border: none;
-  background-image: url('../img-css/card/card-heart.png');
+  background-image: url('../img-css/card/card-heart.svg');
   background-position: center center;
   background-repeat: no-repeat;
+  transition: 0.3s ease-in-out;
+  background-color: transparent;
+}
+
+.card__forever-btn:hover {
+  background-image: url('../img-css/hover/card/card-heart-hover.svg');
+}
+
+.card__forever-btn:active,
+.card__forever-btn:target,
+.card__forever-btn:visited {
+  background-image: url('../img-css/card/card-heart-active.svg');
+}
+
+.card__forever-btn_active {
+  background-image: url('../img-css/card/card-heart-active.svg');
+}
+
+.card__forever-btn_active:hover {
+  background-image: url('../img-css/hover/card/card-heart-hover.svg');
 }
 
 .card__name {

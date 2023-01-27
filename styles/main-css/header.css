@@ -1,6 +1,9 @@
 header {
+  max-width: 1442px;
   width: 100%;
-  padding: 1.35em 7.14em 1.78em;
+  padding-top: 1.35em;
+  /* padding: 1.35em 7.14em 1.78em; */
+  /* padding-bottom: 1.78em; */
 }
 
 .navigation {
@@ -22,15 +25,42 @@ header {
   justify-content: space-between;
 }
 
+@media (max-width: 850px) {
+  .navigation-header__pages {
+    margin-right: 1.5em;
+  }
+}
+
 .navigation-header__brands {
   width: 20.71em;
   display: flex;
   justify-content: space-between;
 }
 
+.navigation-header__item {
+  position: relative;
+}
+
 .navigation-header__item a {
   text-decoration: none;
   color: #fbfbfb;
+}
+
+.navigation-header__item::before {
+  position: absolute;
+  content: '';
+  width: 0%;
+  height: 1px;
+  background-color: #fbfbfb;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.navigation-header__item:hover::before {
+  width: 100%;
 }
 
 .page-position {
@@ -41,6 +71,7 @@ header {
 }
 
 .title {
+  position: relative;
   font-family: 'Poppins Bold';
   font-style: normal;
   font-weight: 700;
@@ -49,15 +80,36 @@ header {
   color: #fbfbfb;
 }
 
+.title::before {
+  position: absolute;
+  content: '';
+  width: 0%;
+  height: 1px;
+  background-color: #fbfbfb;
+  bottom: -4px;
+  left: 2px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.title:hover::before {
+  width: 100%;
+}
+
 .title a {
   color: #fbfbfb;
   text-decoration: none;
 }
 
 .visitor__list {
-  width: 9.78em;
+  max-width: 9.78em;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
 
+.menu__btn {
+  display: none;
+}

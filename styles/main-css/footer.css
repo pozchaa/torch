@@ -4,6 +4,7 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .footer__list {
@@ -17,12 +18,55 @@
   justify-content: space-between;
 }
 
+@media (max-width: 1310px) {
+  .footer__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5em;
+  }
+
+  .footer__contacts {
+    display: grid;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer__list {
+    max-width: 50em;
+    margin-right: 1em;
+  }
+}
+
+@media (max-width: 850px) {
+  .footer__list {
+    max-width: 36em;
+  }
+}
+
 .footer__list-item {
+  position: relative;
   font-family: 'Montserrat Regular';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
+}
+
+.footer__list-item::before {
+  position: absolute;
+  content: '';
+  width: 0%;
+  height: 1px;
+  background-color: #000;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.footer__list-item:hover::before {
+  width: 100%;
 }
 
 .footer__list-item a {
@@ -37,62 +81,65 @@
   justify-content: space-between;
 }
 
+@media (max-width: 1310px) {
+  .footer__contacts {
+    max-width: 8em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+    gap: 0.5em;
+  }
+}
+
+.footer__contacts-item {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
 .footer__contacts-item a {
   position: relative;
 }
 
-.footer__contacts-vk::before {
+.footer__contacts-item a::before {
   width: 2.71em;
   height: 2.71em;
-  background-image: url('../img-css/footer/vkontakte.svg');
 
   box-sizing: border-box;
   content: '';
   position: absolute;
-  top: -2.61em;
-  left: -0.05em;
 
   background-size: cover;
+  transition: 0.3s ease-in-out;
+}
+
+.footer__contacts-item a:hover::before {
+  transform: scale(1.1);
+}
+
+.footer__contacts-vk::before {
+  background-image: url('../img-css/footer/vkontakte.svg');
+
+  /* top: -2.61em;
+  left: -0.05em; */
 }
 
 .footer__contacts-inst::before {
-  width: 2.71em;
-  height: 2.71em;
   background-image: url('../img-css/footer/instagram.svg');
-
-  box-sizing: border-box;
-  content: '';
-  position: absolute;
+  /* 
   top: -2.61em;
-  left: -0.98em;
-
-  background-size: cover;
+  left: -0.98em; */
 }
 
 .footer__contacts-tg::before {
-  width: 2.71em;
-  height: 2.71em;
   background-image: url('../img-css/footer/telegram.svg');
 
-  box-sizing: border-box;
-  content: '';
-  position: absolute;
-  top: -2.61em;
-  left: -1.78em;
-
-  background-size: cover;
+  /* top: -2.61em;
+  left: -1.78em; */
 }
 
 .footer__contacts-youtube::before {
-  width: 2.71em;
-  height: 2.71em;
   background-image: url('../img-css/footer/youtube.svg');
 
-  box-sizing: border-box;
-  content: '';
-  position: absolute;
-  top: -2.61em;
-  left: -2.72em;
-
-  background-size: cover;
+  /* top: -2.61em;
+  left: -2.72em; */
 }

@@ -1,0 +1,24 @@
+.container {
+  padding: 0 1.71em;
+}
+
+.aside-home {
+  display: none;
+}
+
+.mobile__picture {
+  display: block;
+  width: 100%;
+}
+
+.mobile__picture img {
+  width: 100%;
+}
+
+.product-new__body {
+  padding-top: 1.42em;
+}
+
+.product-new__title {
+  text-align: start;
+}

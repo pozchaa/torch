@@ -4,59 +4,203 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:768.98px)"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/main-css/styles.css" />
     <link rel="stylesheet" href="./styles/main-css/header.css" />
     <link rel="stylesheet" href="./styles/main-css/main.css" />
     <link rel="stylesheet" href="./styles/main-css/footer.css" />
     <link rel="stylesheet" href="./styles/main-css/card.css" />
-    <!-- <link
+    <link rel="stylesheet" href="./styles/main-css/svg-animation.css" />
+    <link rel="stylesheet" href="./styles/main-css/swiper.css" />
+    <link
       rel="stylesheet"
       media="screen and (max-width:768.98px)"
-      href="./styles/media-css/mobile.css"
-    /> -->
+      href="./styles/media-css/tablet-styles.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:768.98px)"
+      href="./styles/media-css/tablet-header.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:768.98px)"
+      href="./styles/media-css/tablet-main.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:768.98px)"
+      href="./styles/media-css/tablet-card.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:768.98px)"
+      href="./styles/media-css/tablet-swiper.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <title>HOME</title>
   </head>
   <body>
     <div class="home-image">
       <header>
-        <nav class="navigation navigation-header">
-          <ul class="navigation-header__pages">
-            <li class="navigation-header__item"><a a href="#">КАТАЛОГ</a></li>
-            <li class="navigation-header__item"><a a href="#">LOOKBOOK</a></li>
-            <li class="navigation-header__item"><a a href="#">АКЦИИ И СКИДКИ</a></li>
-            <li class="navigation-header__item"><a a href="#">О НАС</a></li>
-          </ul>
-          <ul class="navigation-header__brands">
-            <li class="navigation-header__item"><a href="#">КÄISY</a></li>
-            <li class="navigation-header__item"><a href="#">ZIGATT</a></li>
-            <li class="navigation-header__item"><a href="#">FFF</a></li>
-            <li class="navigation-header__item"><a href="#">TORCHIEFF</a></li>
-          </ul>
-        </nav>
-        <section class="page-position">
-          <h1 class="title"><a href="#">TORCH</a></h1>
-          <ul class="visitor__list">
-            <li class="visitor__item visitor__item_search">
-              <a href="#"><img src="./img/header/search.svg" alt="search" /></a>
-            </li>
-            <li class="visitor__item visitor__item_user">
-              <a href="#"><img src="./img/header/user.svg" alt="user" /></a>
-            </li>
-            <li class="visitor__item visitor__item_forever">
-              <a href="#"><img src="./img/header/forever.png" alt="forever" /></a>
-            </li>
-            <li class="visitor__item visitor__item_cart">
-              <a href="#"><img src="./img/header/cart.svg" alt="cart" /></a>
-            </li>
-          </ul>
-        </section>
+        <div class="container">
+          <nav class="navigation navigation-header">
+            <ul class="navigation-header__pages">
+              <li class="navigation-header__item"><a a href="#">КАТАЛОГ</a></li>
+              <li class="navigation-header__item"><a a href="#">LOOKBOOK</a></li>
+              <li class="navigation-header__item"><a a href="#">АКЦИИ И СКИДКИ</a></li>
+              <li class="navigation-header__item"><a a href="#">О НАС</a></li>
+            </ul>
+            <ul class="navigation-header__brands">
+              <li class="navigation-header__item"><a href="#">КÄISY</a></li>
+              <li class="navigation-header__item"><a href="#">ZIGATT</a></li>
+              <li class="navigation-header__item"><a href="#">FFF</a></li>
+              <li class="navigation-header__item"><a href="#">TORCHIEFF</a></li>
+            </ul>
+          </nav>
+          <section class="page-position">
+            <button class="menu__btn">
+              <svg
+                width="18"
+                height="14"
+                viewBox="0 0 18 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 7H18M0 1H18M0 13H18"
+                  stroke="#191919"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+                  class="svg-menu-1"
+                ></path>
+              </svg>
+            </button>
+            <h1 class="title"><a href="#">TORCH</a></h1>
+            <ul class="visitor__list">
+              <li class="visitor__item visitor__item_search">
+                <a href="#"
+                  ><svg
+                    width="20"
+                    height="19"
+                    viewBox="0 0 20 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <line
+                      y1="-0.75"
+                      x2="6.74682"
+                      y2="-0.75"
+                      transform="matrix(0.707604 0.70661 -0.707604 0.70661 13.4545 13.4355)"
+                      stroke="#FBFBFB"
+                      stroke-width="1.5"
+                      class="svg-elem-1"
+                    ></line>
+                    <path
+                      d="M15.6942 8.21054C15.6942 12.3299 12.3498 15.6711 8.22209 15.6711C4.09437 15.6711 0.75 12.3299 0.75 8.21054C0.75 4.09119 4.09437 0.75 8.22209 0.75C12.3498 0.75 15.6942 4.09119 15.6942 8.21054Z"
+                      stroke="#FBFBFB"
+                      stroke-width="1.5"
+                      class="svg-elem-2"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="visitor__item visitor__item_user">
+                <a href="#">
+                  <svg
+                    width="16"
+                    height="19"
+                    viewBox="0 0 16 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.85761 17.4527C1.23276 13.8211 4.30205 10.989 8.03281 10.989C11.7636 10.989 14.8329 13.8211 15.208 17.4527H0.85761Z"
+                      stroke="#FBFBFB"
+                      stroke-width="1.5"
+                      class="svg--1 svg-user-1"
+                    ></path>
+                    <path
+                      d="M12.297 4.5507C12.297 6.62429 10.5459 8.35139 8.32776 8.35139C6.10967 8.35139 4.35852 6.62429 4.35852 4.5507C4.35852 2.47711 6.10967 0.75 8.32776 0.75C10.5459 0.75 12.297 2.47711 12.297 4.5507Z"
+                      stroke="#FBFBFB"
+                      stroke-width="1.5"
+                      class="svg--2 svg-user-2"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="visitor__item visitor__item_forever">
+                <a href="#"
+                  ><svg
+                    width="21"
+                    height="19"
+                    viewBox="0 0 21 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.3908 15.5527L12.3907 15.5528C12.0939 15.7793 11.5161 16.1978 11.0007 16.5678C10.8725 16.6598 10.7491 16.7482 10.6362 16.8289C10.5234 16.7482 10.4 16.6598 10.2717 16.5678C9.75644 16.1978 9.17855 15.7793 8.88179 15.5528L8.8817 15.5527C7.7801 14.712 6.44403 13.6406 5.22361 12.5233C3.98882 11.3929 2.93105 10.2678 2.33455 9.31992L2.33416 9.31932C1.4747 7.95579 1.19369 6.25984 1.56785 4.68771L1.56795 4.68773L1.571 4.67405C2.33932 1.23222 6.60858 -0.170603 9.24805 2.12664L9.25054 2.12879C9.39056 2.24985 9.52556 2.38917 9.70221 2.5729C9.7715 2.64499 9.84704 2.72355 9.92565 2.80294L10.6362 3.52062L11.3468 2.80294C11.4254 2.72357 11.501 2.64505 11.5703 2.57291C11.7469 2.38918 11.8819 2.24985 12.022 2.12879L12.0244 2.12664C14.6639 -0.170604 18.9332 1.23222 19.7015 4.67405L19.7014 4.67407L19.7046 4.68771C20.0788 6.25983 19.7978 7.95579 18.9383 9.31933L18.938 9.31992C18.3415 10.2678 17.2837 11.3929 16.0489 12.5233C14.8285 13.6406 13.4924 14.712 12.3908 15.5527ZM9.92834 1.39304C9.92044 1.3861 9.91252 1.37919 9.90457 1.37232L9.92834 1.39304Z"
+                      fill="none"
+                      fill-opacity="0.5"
+                      stroke="white"
+                      stroke-width="2"
+                      class="svg-forever-1"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="visitor__item visitor__item_cart">
+                <a href="#"
+                  ><svg
+                    width="21"
+                    height="19"
+                    viewBox="0 0 21 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <mask id="path-1-inside-1_74_431" fill="white">
+                      <path
+                        d="M5.46484 5.64914C5.46484 2.52921 7.99405 0 11.114 0C14.2339 0 16.7631 2.52921 16.7631 5.64914V5.82489H5.46484V5.64914Z"
+                        class="svg-cart-1"
+                      ></path>
+                    </mask>
+                    <path
+                      d="M3.96484 5.64914C3.96484 1.70078 7.16562 -1.5 11.114 -1.5C15.0623 -1.5 18.2631 1.70078 18.2631 5.64914H15.2631C15.2631 3.35763 13.4055 1.5 11.114 1.5C8.82248 1.5 6.96484 3.35763 6.96484 5.64914H3.96484ZM16.7631 5.82489H5.46484H16.7631ZM3.96484 5.82489V5.64914C3.96484 1.70078 7.16562 -1.5 11.114 -1.5V1.5C8.82248 1.5 6.96484 3.35763 6.96484 5.64914V5.82489H3.96484ZM11.114 -1.5C15.0623 -1.5 18.2631 1.70078 18.2631 5.64914V5.82489H15.2631V5.64914C15.2631 3.35763 13.4055 1.5 11.114 1.5V-1.5Z"
+                      fill="#FBFBFB"
+                      mask="url(#path-1-inside-1_74_431)"
+                      class="svg-cart-2"
+                    ></path>
+                    <path
+                      d="M1.27185 8.20288C1.27185 13.3115 5.41322 17.4529 10.5219 17.4529H11C16.1086 17.4529 20.25 13.3115 20.25 8.20288V4.39065H1.27185V8.20288Z"
+                      stroke="#FBFBFB"
+                      stroke-width="1.5"
+                      class="svg-cart-3"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
       </header>
       <div class="home-image__anchor-block">
         <a class="home-image__anchor-arrow" href="#aside-home"></a>
       </div>
     </div>
     <main>
+      <picture class="mobile__picture">
+        <source media="(max-width: 768px)" sizes="50vw" type="image/webp" />
+        <img
+          src="./img/mobile/home/Rectangle 64.png"
+          sizes="(max-width: 768px)"
+          alt="top picture"
+        />
+      </picture>
       <aside class="aside-home" id="aside-home">
         <div class="aside-home__body">
           <div class="aside-home__text-body">
@@ -74,234 +218,197 @@
         <section class="product-new">
           <div class="product-new__body">
             <h2 class="product-new__title">НОВИНКИ</h2>
-            <div class="cards-list card-list__home">
-              <article class="card">
-                <div class="card__body">
-                  <ul class="card__header">
-                    <li class="card__sale">SOLDOUT</li>
-                    <li class="card__zoom"><button class="card__zoom-btn"></button></li>
-                  </ul>
-                  <div class="card__img">
-                    <img src="./img/cards/image 1.png" alt="card-img" />
-                  </div>
-                  <div class="card__block-btn">
-                    <button class="card__forever-btn"></button>
-                  </div>
+            <div class="swiper swiper__home">
+              <div class="cards-list card-list__home swiper-wrapper">
+                <div class="swiper-slide">
+                  <article class="card">
+                    <div class="card__body">
+                      <ul class="card__header">
+                        <li class="card__sale">SOLDOUT</li>
+                        <li class="card__zoom"><button class="card__zoom-btn"></button></li>
+                      </ul>
+                      <div class="card__img">
+                        <img src="./img/cards/image 1.png" alt="card-img" />
+                      </div>
+                      <div class="card__block-btn">
+                        <button class="card__forever-btn card__forever-btn_active"></button>
+                      </div>
+                    </div>
+                    <div class="card__footer">
+                      <p class="card__name">ФУТБОЛКА HAUNTED</p>
+                      <p class="card__price">2 200 ₽</p>
+                    </div>
+                  </article>
                 </div>
-                <div class="card__footer">
-                  <p class="card__name">ФУТБОЛКА HAUNTED</p>
-                  <p class="card__price">2 200 ₽</p>
-                </div>
-              </article>
 
-              <article class="card">
-                <div class="card__body">
-                  <ul class="card__header">
-                    <li class="card__sale">SOLDOUT</li>
-                    <li class="card__zoom"><button class="card__zoom-btn"></button></li>
-                  </ul>
-                  <div class="card__img">
-                    <img src="./img/cards/image 1.png" alt="card-img" />
-                  </div>
-                  <div class="card__block-btn">
-                    <button class="card__forever-btn"></button>
-                  </div>
+                <div class="swiper-slide">
+                  <article class="card">
+                    <div class="card__body">
+                      <ul class="card__header">
+                        <li class="card__sale">SOLDOUT</li>
+                        <li class="card__zoom"><button class="card__zoom-btn"></button></li>
+                      </ul>
+                      <div class="card__img">
+                        <img src="./img/cards/image 1.png" alt="card-img" />
+                      </div>
+                      <div class="card__block-btn">
+                        <button class="card__forever-btn"></button>
+                      </div>
+                    </div>
+                    <div class="card__footer">
+                      <p class="card__name">ФУТБОЛКА HAUNTED</p>
+                      <p class="card__price">2 200 ₽</p>
+                    </div>
+                  </article>
                 </div>
-                <div class="card__footer">
-                  <p class="card__name">ФУТБОЛКА HAUNTED</p>
-                  <p class="card__price">2 200 ₽</p>
-                </div>
-              </article>
 
-              <article class="card">
-                <div class="card__body">
-                  <ul class="card__header">
-                    <li class="card__sale">SOLDOUT</li>
-                    <li class="card__zoom"><button class="card__zoom-btn"></button></li>
-                  </ul>
-                  <div class="card__img">
-                    <img src="./img/cards/image 1.png" alt="card-img" />
-                  </div>
-                  <div class="card__block-btn">
-                    <button class="card__forever-btn"></button>
-                  </div>
+                <div class="swiper-slide">
+                  <article class="card">
+                    <div class="card__body">
+                      <ul class="card__header">
+                        <li class="card__sale">SOLDOUT</li>
+                        <li class="card__zoom"><button class="card__zoom-btn"></button></li>
+                      </ul>
+                      <div class="card__img">
+                        <img src="./img/cards/image 1.png" alt="card-img" />
+                      </div>
+                      <div class="card__block-btn">
+                        <button class="card__forever-btn"></button>
+                      </div>
+                    </div>
+                    <div class="card__footer">
+                      <p class="card__name">ФУТБОЛКА HAUNTED</p>
+                      <p class="card__price">2 200 ₽</p>
+                    </div>
+                  </article>
                 </div>
-                <div class="card__footer">
-                  <p class="card__name">ФУТБОЛКА HAUNTED</p>
-                  <p class="card__price">2 200 ₽</p>
-                </div>
-              </article>
 
-              <article class="card">
-                <div class="card__body">
-                  <ul class="card__header">
-                    <li class="card__sale">SOLDOUT</li>
-                    <li class="card__zoom"><button class="card__zoom-btn"></button></li>
-                  </ul>
-                  <div class="card__img">
-                    <img src="./img/cards/image 1.png" alt="card-img" />
-                  </div>
-                  <div class="card__block-btn">
-                    <button class="card__forever-btn"></button>
-                  </div>
+                <div class="swiper-slide">
+                  <article class="card">
+                    <div class="card__body">
+                      <ul class="card__header">
+                        <li class="card__sale">SOLDOUT</li>
+                        <li class="card__zoom"><button class="card__zoom-btn"></button></li>
+                      </ul>
+                      <div class="card__img">
+                        <img src="./img/cards/image 1.png" alt="card-img" />
+                      </div>
+                      <div class="card__block-btn">
+                        <button class="card__forever-btn"></button>
+                      </div>
+                    </div>
+                    <div class="card__footer">
+                      <p class="card__name">ФУТБОЛКА HAUNTED</p>
+                      <p class="card__price">2 200 ₽</p>
+                    </div>
+                  </article>
                 </div>
-                <div class="card__footer">
-                  <p class="card__name">ФУТБОЛКА HAUNTED</p>
-                  <p class="card__price">2 200 ₽</p>
-                </div>
-              </article>
 
-              <article class="card">
-                <div class="card__body">
-                  <ul class="card__header">
-                    <li class="card__sale">SOLDOUT</li>
-                    <li class="card__zoom"><button class="card__zoom-btn"></button></li>
-                  </ul>
-                  <div class="card__img">
-                    <img src="./img/cards/image 1.png" alt="card-img" />
-                  </div>
-                  <div class="card__block-btn">
-                    <button class="card__forever-btn"></button>
-                  </div>
+                <div class="swiper-slide">
+                  <article class="card">
+                    <div class="card__body">
+                      <ul class="card__header">
+                        <li class="card__sale">SOLDOUT</li>
+                        <li class="card__zoom"><button class="card__zoom-btn"></button></li>
+                      </ul>
+                      <div class="card__img">
+                        <img src="./img/cards/image 1.png" alt="card-img" />
+                      </div>
+                      <div class="card__block-btn">
+                        <button class="card__forever-btn"></button>
+                      </div>
+                    </div>
+                    <div class="card__footer">
+                      <p class="card__name">ФУТБОЛКА HAUNTED</p>
+                      <p class="card__price">2 200 ₽</p>
+                    </div>
+                  </article>
                 </div>
-                <div class="card__footer">
-                  <p class="card__name">ФУТБОЛКА HAUNTED</p>
-                  <p class="card__price">2 200 ₽</p>
-                </div>
-              </article>
 
-              <article class="card">
-                <div class="card__body">
-                  <ul class="card__header">
-                    <li class="card__sale">SOLDOUT</li>
-                    <li class="card__zoom"><button class="card__zoom-btn"></button></li>
-                  </ul>
-                  <div class="card__img">
-                    <img src="./img/cards/image 1.png" alt="card-img" />
-                  </div>
-                  <div class="card__block-btn">
-                    <button class="card__forever-btn"></button>
-                  </div>
+                <div class="swiper-slide">
+                  <article class="card">
+                    <div class="card__body">
+                      <ul class="card__header">
+                        <li class="card__sale">SOLDOUT</li>
+                        <li class="card__zoom"><button class="card__zoom-btn"></button></li>
+                      </ul>
+                      <div class="card__img">
+                        <img src="./img/cards/image 1.png" alt="card-img" />
+                      </div>
+                      <div class="card__block-btn">
+                        <button class="card__forever-btn"></button>
+                      </div>
+                    </div>
+                    <div class="card__footer">
+                      <p class="card__name">ФУТБОЛКА HAUNTED</p>
+                      <p class="card__price">2 200 ₽</p>
+                    </div>
+                  </article>
                 </div>
-                <div class="card__footer">
-                  <p class="card__name">ФУТБОЛКА HAUNTED</p>
-                  <p class="card__price">2 200 ₽</p>
-                </div>
-              </article>
 
-              <article class="card">
-                <div class="card__body">
-                  <ul class="card__header">
-                    <li class="card__sale">SOLDOUT</li>
-                    <li class="card__zoom"><button class="card__zoom-btn"></button></li>
-                  </ul>
-                  <div class="card__img">
-                    <img src="./img/cards/image 1.png" alt="card-img" />
-                  </div>
-                  <div class="card__block-btn">
-                    <button class="card__forever-btn"></button>
-                  </div>
+                <div class="swiper-slide">
+                  <article class="card">
+                    <div class="card__body">
+                      <ul class="card__header">
+                        <li class="card__sale">SOLDOUT</li>
+                        <li class="card__zoom"><button class="card__zoom-btn"></button></li>
+                      </ul>
+                      <div class="card__img">
+                        <img src="./img/cards/image 1.png" alt="card-img" />
+                      </div>
+                      <div class="card__block-btn">
+                        <button class="card__forever-btn"></button>
+                      </div>
+                    </div>
+                    <div class="card__footer">
+                      <p class="card__name">ФУТБОЛКА HAUNTED</p>
+                      <p class="card__price">2 200 ₽</p>
+                    </div>
+                  </article>
                 </div>
-                <div class="card__footer">
-                  <p class="card__name">ФУТБОЛКА HAUNTED</p>
-                  <p class="card__price">2 200 ₽</p>
-                </div>
-              </article>
 
-              <article class="card">
-                <div class="card__body">
-                  <ul class="card__header">
-                    <li class="card__sale">SOLDOUT</li>
-                    <li class="card__zoom"><button class="card__zoom-btn"></button></li>
-                  </ul>
-                  <div class="card__img">
-                    <img src="./img/cards/image 1.png" alt="card-img" />
-                  </div>
-                  <div class="card__block-btn">
-                    <button class="card__forever-btn"></button>
-                  </div>
+                <div class="swiper-slide">
+                  <article class="card">
+                    <div class="card__body">
+                      <ul class="card__header">
+                        <li class="card__sale">SOLDOUT</li>
+                        <li class="card__zoom"><button class="card__zoom-btn"></button></li>
+                      </ul>
+                      <div class="card__img">
+                        <img src="./img/cards/image 1.png" alt="card-img" />
+                      </div>
+                      <div class="card__block-btn">
+                        <button class="card__forever-btn"></button>
+                      </div>
+                    </div>
+                    <div class="card__footer">
+                      <p class="card__name">ФУТБОЛКА HAUNTED</p>
+                      <p class="card__price">2 200 ₽</p>
+                    </div>
+                  </article>
                 </div>
-                <div class="card__footer">
-                  <p class="card__name">ФУТБОЛКА HAUNTED</p>
-                  <p class="card__price">2 200 ₽</p>
-                </div>
-              </article>
 
-              <article class="card">
-                <div class="card__body">
-                  <ul class="card__header">
-                    <li class="card__sale">SOLDOUT</li>
-                    <li class="card__zoom"><button class="card__zoom-btn"></button></li>
-                  </ul>
-                  <div class="card__img">
-                    <img src="./img/cards/image 1.png" alt="card-img" />
-                  </div>
-                  <div class="card__block-btn">
-                    <button class="card__forever-btn"></button>
-                  </div>
+                <div class="swiper-slide">
+                  <article class="card">
+                    <div class="card__body">
+                      <ul class="card__header">
+                        <li class="card__sale">SOLDOUT</li>
+                        <li class="card__zoom"><button class="card__zoom-btn"></button></li>
+                      </ul>
+                      <div class="card__img">
+                        <img src="./img/cards/image 1.png" alt="card-img" />
+                      </div>
+                      <div class="card__block-btn">
+                        <button class="card__forever-btn"></button>
+                      </div>
+                    </div>
+                    <div class="card__footer">
+                      <p class="card__name">ФУТБОЛКА HAUNTED</p>
+                      <p class="card__price">2 200 ₽</p>
+                    </div>
+                  </article>
                 </div>
-                <div class="card__footer">
-                  <p class="card__name">ФУТБОЛКА HAUNTED</p>
-                  <p class="card__price">2 200 ₽</p>
-                </div>
-              </article>
-
-              <article class="card">
-                <div class="card__body">
-                  <ul class="card__header">
-                    <li class="card__sale">SOLDOUT</li>
-                    <li class="card__zoom"><button class="card__zoom-btn"></button></li>
-                  </ul>
-                  <div class="card__img">
-                    <img src="./img/cards/image 1.png" alt="card-img" />
-                  </div>
-                  <div class="card__block-btn">
-                    <button class="card__forever-btn"></button>
-                  </div>
-                </div>
-                <div class="card__footer">
-                  <p class="card__name">ФУТБОЛКА HAUNTED</p>
-                  <p class="card__price">2 200 ₽</p>
-                </div>
-              </article>
-
-              <article class="card">
-                <div class="card__body">
-                  <ul class="card__header">
-                    <li class="card__sale">SOLDOUT</li>
-                    <li class="card__zoom"><button class="card__zoom-btn"></button></li>
-                  </ul>
-                  <div class="card__img">
-                    <img src="./img/cards/image 1.png" alt="card-img" />
-                  </div>
-                  <div class="card__block-btn">
-                    <button class="card__forever-btn"></button>
-                  </div>
-                </div>
-                <div class="card__footer">
-                  <p class="card__name">ФУТБОЛКА HAUNTED</p>
-                  <p class="card__price">2 200 ₽</p>
-                </div>
-              </article>
-
-              <article class="card">
-                <div class="card__body">
-                  <ul class="card__header">
-                    <li class="card__sale">SOLDOUT</li>
-                    <li class="card__zoom"><button class="card__zoom-btn"></button></li>
-                  </ul>
-                  <div class="card__img">
-                    <img src="./img/cards/image 1.png" alt="card-img" />
-                  </div>
-                  <div class="card__block-btn">
-                    <button class="card__forever-btn"></button>
-                  </div>
-                </div>
-                <div class="card__footer">
-                  <p class="card__name">ФУТБОЛКА HAUNTED</p>
-                  <p class="card__price">2 200 ₽</p>
-                </div>
-              </article>
+              </div>
             </div>
           </div>
           <a class="catalog-btn" href="#">К ТОВАРАМ</a>
@@ -347,7 +454,9 @@
           </ul>
           <ul class="footer__contacts">
             <li class="footer__contacts-item">
-              <a class="footer__contacts-vk" href="#"></a>
+              <a class="footer__contacts-vk" href="#">
+                <img src="./styles/img-css/footer/vkontakte.svg" />
+              </a>
             </li>
             <li class="footer__contacts-item">
               <a class="footer__contacts-inst" href="#"></a>
@@ -363,5 +472,6 @@
       </div>
     </footer>
     <script src="./scripts/anchor-slow.js"></script>
+    <script src="./scripts/swiper-home.js"></script>
   </body>
 </html>
