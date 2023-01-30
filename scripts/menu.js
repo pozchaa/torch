@@ -22,7 +22,6 @@ headerBurger.addEventListener('click', function () {
   if (!headerBurger.classList.contains('menu__btn_active')) {
     headerBurger.classList.add('menu__btn_active');
     menu.style.left = '0';
-    header.style.position = 'fixed';
     menu.appendChild(footer);
     footer.style.background = '#FBFBFB';
     footer.style.paddingTop = '1em';
@@ -30,7 +29,6 @@ headerBurger.addEventListener('click', function () {
   } else {
     headerBurger.classList.remove('menu__btn_active');
     menu.style.left = '-1000px';
-    header.style.position = 'static';
     footer.style.background = 'transparent';
     footer.style.paddingTop = '0em';
     body.classList.remove('noscroll');

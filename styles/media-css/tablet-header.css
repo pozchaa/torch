@@ -1,5 +1,5 @@
 header {
-  /* position: fixed; */
+  position: fixed;
   padding-top: 3.55em;
   z-index: 500;
   background: #fbfbfb;
@@ -22,6 +22,8 @@ header {
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
+  position: relative;
+  left: 15px;
 }
 
 .title a {
