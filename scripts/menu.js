@@ -18,20 +18,21 @@ const menuContactsMore = document.querySelector('.menu__contacts_more');
 
 const footerHomeBtn = document.querySelector('.footer__home-btn');
 
-headerBurger.addEventListener('click', function () {
+headerBurger.addEventListener('click', function (evt) {
+  evt.preventDefault();
   if (!headerBurger.classList.contains('menu__btn_active')) {
     headerBurger.classList.add('menu__btn_active');
     menu.style.left = '0';
     menu.appendChild(footer);
     footer.style.background = '#FBFBFB';
     footer.style.paddingTop = '1em';
-    body.classList.add('noscroll');
+    // body.classList.add('noscroll');
   } else {
     headerBurger.classList.remove('menu__btn_active');
     menu.style.left = '-1000px';
     footer.style.background = 'transparent';
     footer.style.paddingTop = '0em';
-    body.classList.remove('noscroll');
+    // body.classList.remove('noscroll');
     menu.appendChild(footer);
     body.appendChild(footer);
   }

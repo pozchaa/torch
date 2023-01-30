@@ -152,9 +152,9 @@ body {
   display: none;
 }
 
-
 .noscroll {
-  position: fixed; 
+  position: static;
   inline-size: 100%;
-  overflow-y:scroll 
+  overflow-y: scroll;
 }
+
