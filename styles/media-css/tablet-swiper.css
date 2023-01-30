@@ -6,26 +6,32 @@
   /* width: 320px;
         height: 138px; */
   /* padding: 0 1em !important; */
+  box-sizing: border-box;
 }
+
+/* .cards-list__swiper {
+  display: flex ;
+  column-gap: 0;
+} */
 
 .swiper-wrapper {
   box-sizing: border-box;
   max-width: 240px !important;
-  padding: 0 1em;
+  /* padding: 0 1em; */
 }
 
 .swiper-slide,
 .swiper-slide-active {
-  background-color: #f8f8f8;
+  background-color: #fbfbfb;
 }
 
 .service {
-  background-color: #f8f8f8;
+  background-color: #fbfbfb;
   /* max-width: 320px; */
 }
 
 .service__title {
-  background-color: #ffffff;
+  background-color: #fbfbfb;
   margin-bottom: 0.9em;
   padding: 1em;
 }
@@ -46,7 +52,7 @@
 .swiper-slide {
   text-align: center;
   font-size: 16px;
-  background: #fff;
+  background: #fbfbfb;
 
   /* Center slide text vertically */
   display: -webkit-box;

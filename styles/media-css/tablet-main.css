@@ -22,3 +22,29 @@
 .product-new__title {
   text-align: start;
 }
+
+.mailing {
+  display: none;
+}
+
+.catalog-btn {
+  display: none;
+}
+
+.product-new__body_mobile {
+  margin-bottom: 2.6em;
+}
+
+.footer__desktop {
+  display: block;
+}
+
+.catalog__home {
+  display: block;
+}
+
+.product-new__title {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 1.21em;
+}

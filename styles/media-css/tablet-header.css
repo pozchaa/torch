@@ -1,5 +1,8 @@
 header {
-  padding-top: 3.85em;
+  /* position: fixed; */
+  padding-top: 3.55em;
+  z-index: 500;
+  background: #fbfbfb;
 }
 
 .navigation-header {
@@ -7,6 +10,7 @@ header {
 }
 
 .menu__btn {
+  padding: 0;
   display: block;
   background-color: transparent;
   border: none;
@@ -46,5 +50,3 @@ header {
 .home-image__anchor-block {
   display: none;
 }
-
-

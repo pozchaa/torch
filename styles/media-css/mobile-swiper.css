@@ -1,0 +1,9 @@
+.swiper-wrapper {
+  box-sizing: border-box;
+  max-width: 160px !important;
+  /* padding: 0 1em; */
+}
+
+.swiper {
+  width: 107%;
+}

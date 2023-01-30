@@ -1,3 +1,7 @@
+/* footer {
+  transition: 0.9s ease-in-out;
+} */
+
 .footer__body {
   height: 7.07em;
   padding-bottom: 1.78em;
@@ -143,3 +147,8 @@
   /* top: -2.61em;
   left: -2.72em; */
 }
+
+.footer__mobile {
+  display: none;
+}
+

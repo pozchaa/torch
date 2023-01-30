@@ -14,11 +14,12 @@
 
 .card__body {
   position: relative;
+  box-sizing: border-box;
   /* padding: 0.6em 0.97em 0.8em; */
 
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
 
   margin-bottom: 0.2em;
 }
@@ -32,15 +33,15 @@
   box-sizing: border-box;
 }
 
-.card__img {
-  /* width: 100%; */
+/* .card__img {
+  width: 100%;
 }
 
 .card__img img {
-  /* max-height: 345;
+  max-height: 345;
   width: 100%;
-  object-fit: contain; */
-}
+  object-fit: contain;
+} */
 
 .card__sale {
   font-family: 'Montserrat Regular';
@@ -50,6 +51,10 @@
   line-height: 20px;
 
   color: #191919;
+}
+
+.card__zoom {
+  float: right;
 }
 
 .card__zoom-btn {

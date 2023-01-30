@@ -1,0 +1,26 @@
+footer {
+  /* position: fixed; */
+  z-index: 500;
+  bottom: 10px;
+  width: 100%;
+}
+
+.footer__body {
+  height: auto;
+}
+
+.footer__desktop {
+  display: none;
+}
+
+.footer__list {
+  display: flex;
+  margin: 0 auto;
+}
+
+.footer__mobile {
+  box-sizing: border-box;
+  display: block;
+  padding: 0 2.6em;
+  padding-bottom: 1.78em;
+}
