@@ -1,17 +1,16 @@
 .menu {
-  /* visibility: visible; */
-  /* display: none; */
+  visibility: hidden;
   position: fixed;
   left: -1000px;
   /* top: 90px; */
   padding-top: 90px;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: #fbfbfb;
   z-index: 250;
 
   overflow: auto;
-  transition: 0.9s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .menu::-webkit-scrollbar {
@@ -72,12 +71,22 @@
   cursor: pointer;
 }
 
-/* .header__burger {
-  background-color:transparent
-} */
+.header__burger {
+  width: 20px;
+  height: 20px;
+  animation: opacityAnimation 0.8s ease;
+  background-image: url('../img-css/header/burger.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: 0.8s ease-in-out;
+}
 
 .header__burger_active {
-  transform: rotate(180deg);
+  animation: opacityAnimation 0.8s ease;
+  background-image: url('../img-css/header/burger-active.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: 0.8s ease-in-out;
 }
 
 .menu__shipping_more-active {

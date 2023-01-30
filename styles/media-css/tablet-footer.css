@@ -1,7 +1,7 @@
 footer {
   /* position: fixed; */
   z-index: 500;
-  bottom: 10px;
+  bottom: 0px;
   width: 100%;
 }
 
