@@ -115,3 +115,7 @@ header {
 .menu__btn {
   display: none;
 }
+
+.hamburger__body {
+  display: none;
+}
