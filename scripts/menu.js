@@ -19,13 +19,11 @@ const menuContactsMore = document.querySelector('.menu__contacts_more');
 const footerHomeBtn = document.querySelector('.footer__home-btn');
 
 headerBurger.addEventListener('click', function (evt) {
-  evt.preventDefault();
   if (!headerBurger.classList.contains('menu__btn_active')) {
     headerBurger.classList.add('menu__btn_active');
     headerBurger.classList.add('header__burger_active');
     menu.style.left = '0';
     menu.style.visibility = 'visible';
-    menu.appendChild(footer);
     footer.style.background = '#FBFBFB';
     footer.style.position = 'fixed';
     footer.style.paddingTop = '1em';
@@ -39,8 +37,6 @@ headerBurger.addEventListener('click', function (evt) {
     footer.style.paddingTop = '0em';
     footer.style.position = 'static';
     menu.style.visibility = 'hidden';
-    menu.appendChild(footer);
-    body.appendChild(footer);
     body.style.height = 'auto';
     body.style.overflow = 'auto';
   }

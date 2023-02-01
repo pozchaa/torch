@@ -14,7 +14,6 @@
 }
 
 .aside-home {
-
   margin: 0 auto;
   width: 100%;
   background: #191919;
@@ -70,6 +69,7 @@
 
 .product-new__body {
   padding-top: 6.9em;
+  padding-bottom: 1em;
 }
 
 .product-new__title {

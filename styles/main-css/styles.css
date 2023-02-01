@@ -83,7 +83,7 @@ body {
 
 .home-image {
   width: 100%;
-  height: 1024px;
+  height: 100vh;
   background-image: url('../img-css/header/header-img-large.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
@@ -145,7 +145,7 @@ body {
   transform: rotate(-145deg) translateY(-2px) translateX(-4px);
 }
 .home-image__anchor-block:hover .home-image__anchor-arrow {
-  transform: scale(1.45);
+  transform: scale(1.15);
 }
 
 .hidden {
@@ -158,3 +158,29 @@ body {
   overflow-y: scroll;
 }
 
+a:link,
+a:visited,
+a:hover,
+a:focus,
+a:active {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:link,
+button:visited,
+button:hover,
+button:focus,
+button:active {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+svg:link,
+svg:visited,
+svg:hover,
+svg:focus,
+svg:active {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+}

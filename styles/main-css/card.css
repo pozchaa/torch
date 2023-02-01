@@ -115,19 +115,23 @@
   background-image: url('../img-css/hover/card/card-heart-hover.svg');
 }
 
-.card__forever-btn:active,
+/* .card__forever-btn:active,
 .card__forever-btn:target,
 .card__forever-btn:visited {
   background-image: url('../img-css/card/card-heart-active.svg');
-}
+} */
 
 .card__forever-btn_active {
   background-image: url('../img-css/card/card-heart-active.svg');
 }
 
 .card__forever-btn_active:hover {
-  background-image: url('../img-css/hover/card/card-heart-hover.svg');
+  background-image: url('../img-css/card/card-heart-active.svg');
 }
+
+/* .card__forever-btn_active:hover {
+  background-image: url('../img-css/hover/card/card-heart-hover.svg');
+} */
 
 .card__name {
   font-family: 'Montserrat Medium';

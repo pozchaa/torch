@@ -1,6 +1,6 @@
 header {
   position: fixed;
-  padding-top: 0.8em;
+  padding-top: 0.6em;
   z-index: 500;
   background: #fbfbfb;
 }
@@ -23,7 +23,7 @@ header {
   font-size: 20px;
   line-height: 30px;
   position: relative;
-  left: 13px;
+  left: 13.5px;
 }
 
 .title a {

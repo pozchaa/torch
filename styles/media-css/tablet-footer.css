@@ -24,3 +24,8 @@ footer {
   padding: 0 2.6em;
   padding-bottom: 1.78em;
 }
+
+.footer__home-btn {
+  text-decoration: none;
+  color: #666;
+}
