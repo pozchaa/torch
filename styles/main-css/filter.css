@@ -1,0 +1,96 @@
+.filter {
+  margin: 1em 0;
+}
+
+.filter__top-btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter__btn {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Montserrat Medium';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #191919;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 0.9s ease-in-out;
+  margin-bottom: 1em;
+}
+
+.filter__btn:hover .filter__btn-plus {
+  transform: scale(1.15);
+  font-weight: 600;
+}
+
+.filter__btn-plus {
+  position: relative;
+  top: -1.2px;
+  font-family: ' ';
+  font-weight: 200;
+  font-size: 24px;
+  margin-right: 0.2em;
+  transition: 0.3s ease-in-out;
+}
+
+.filter__btn-clear {
+  font-family: 'Montserrat Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #d73e3e;
+}
+
+.filter__category {
+  display: flex;
+}
+
+.filter__product-title {
+  max-width: 210px;
+  width: 100%;
+  font-family: 'Montserrat Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #191919;
+}
+
+.filter__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 790px;
+  width: 100%;
+}
+
+.filter__category-btn {
+  font-family: 'Montserrat Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #191919;
+  background: #f0f0f0;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+
+  margin-right: 0.57em;
+  margin-bottom: 0.57em;
+  padding: 0.71em 1.14em 0.93em;
+}

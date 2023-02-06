@@ -6,6 +6,7 @@ header {
   /* padding-bottom: 1.78em; */
   background: transparent;
   transition: 0.9s ease-in-out;
+  margin: 0 auto;
 }
 
 .navigation {
@@ -48,6 +49,10 @@ header {
   color: #fbfbfb;
 }
 
+.navigation-header__item.navigation-header__item_black a {
+  color: #191919;
+}
+
 .navigation-header__item::before {
   position: absolute;
   content: '';
@@ -59,6 +64,10 @@ header {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+.navigation-header__item.navigation-header__item_black::before {
+  background-color: #191919;
 }
 
 .navigation-header__item:hover::before {
@@ -82,12 +91,39 @@ header {
   color: #fbfbfb;
 }
 
+.page {
+  font-family: 'Montserrat Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+
+  color: #191919;
+}
+
 .title::before {
   position: absolute;
   content: '';
   width: 0%;
   height: 1px;
   background-color: #fbfbfb;
+  bottom: -4px;
+  left: 2px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.title.title_black a {
+  color: #191919;
+}
+
+.title.title_black::before {
+  position: absolute;
+  content: '';
+  width: 0%;
+  height: 1px;
+  background-color: #191919;
   bottom: -4px;
   left: 2px;
   -webkit-transition: all 0.3s ease;
@@ -110,6 +146,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+}
+
+.visitor__item_black svg line,
+.visitor__item_black svg path {
+  stroke: #191919;
+}
+.visitor__item_black-cart-path {
+  fill: #191919;
 }
 
 .menu__btn {
