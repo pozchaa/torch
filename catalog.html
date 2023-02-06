@@ -282,24 +282,113 @@
               <button class="filter__btn-clear">СБРОСИТЬ</button>
             </p>
             <div class="filter__body">
-              <div class="filter__category">
-                <h3 class="filter__product-title filter__category-title">КАТЕГОРИЯ</h3>
-                <div class="filter__wrap">
-                  <button class="filter__category-btn">Футболки</button
-                  ><button class="filter__category-btn">Толстовки</button
-                  ><button class="filter__category-btn">Рубашки</button
-                  ><button class="filter__category-btn">Лонгсливы</button
-                  ><button class="filter__category-btn">Бадлоны</button
-                  ><button class="filter__category-btn">Джинсы</button
-                  ><button class="filter__category-btn">Джемперы</button
-                  ><button class="filter__category-btn">Свитеры</button
-                  ><button class="filter__category-btn">Жилеты</button
-                  ><button class="filter__category-btn">Брюки</button
-                  ><button class="filter__category-btn">Шорты</button
-                  ><button class="filter__category-btn">Аксессуары</button
-                  ><button class="filter__category-btn">Носки</button
-                  ><button class="filter__category-btn">Сумки</button>
+              <div class="filter__body-wrap">
+                <div class="filter__category filter__category-type">
+                  <h3 class="filter__product-title filter__category-title">КАТЕГОРИЯ</h3>
+                  <div class="filter__wrap">
+                    <button
+                      class="filter__category-btn filter__category-btn-type filter__category-btn_active"
+                    >
+                      Футболки</button
+                    ><button class="filter__category-btn filter__category-btn-type">Толстовки</button
+                    ><button class="filter__category-btn filter__category-btn-type">Рубашки</button
+                    ><button class="filter__category-btn filter__category-btn-type">Лонгсливы</button
+                    ><button class="filter__category-btn filter__category-btn-type">Бадлоны</button
+                    ><button class="filter__category-btn filter__category-btn-type">Джинсы</button
+                    ><button class="filter__category-btn filter__category-btn-type">Джемперы</button
+                    ><button class="filter__category-btn filter__category-btn-type">Свитеры</button
+                    ><button class="filter__category-btn filter__category-btn-type">Жилеты</button
+                    ><button class="filter__category-btn filter__category-btn-type">Брюки</button
+                    ><button class="filter__category-btn filter__category-btn-type">Шорты</button
+                    ><button class="filter__category-btn filter__category-btn-type">Аксессуары</button
+                    ><button class="filter__category-btn filter__category-btn-type">Носки</button
+                    ><button class="filter__category-btn filter__category-btn-type">Сумки</button>
+                  </div>
                 </div>
+                <div class="filter__category filter__category-size">
+                  <h3 class="filter__product-title filter__category-title">РАЗМЕР</h3>
+                  <div class="filter__wrap">
+                    <button
+                      class="filter__category-btn filter__category-btn-size filter__category-btn_active"
+                    >
+                      XS</button
+                    ><button class="filter__category-btn filter__category-btn-size">S</button
+                    ><button class="filter__category-btn filter__category-btn-size">M</button
+                    ><button class="filter__category-btn filter__category-btn-size">L</button
+                    ><button class="filter__category-btn filter__category-btn-size">XL</button
+                    ><button class="filter__category-btn filter__category-btn-size">XXL</button
+                    ><button class="filter__category-btn filter__category-btn-size">3XL</button>
+                  </div>
+                </div>
+                <div class="filter__category filter__category-price">
+                  <h3 class="filter__product-title filter__category-title">ЦЕНА</h3>
+                  <div class="filter__wrap">
+                    <div id="rangeSlider" class="range-slider">
+                      <div class="multi-range-slider">
+                        <input type="range" id="input-left" min="1000" max="14000" value="1000" />
+                        <input type="range" id="input-right" min="1000" max="14000" value="14000" />
+  
+                        <div class="slider">
+                          <div class="track"></div>
+                          <div class="range"></div>
+                          <div class="thumb left"></div>
+                          <div class="thumb right"></div>
+                        </div>
+                      </div>
+                      <div class="number-group">
+                        <label class="number-input__label" for="number-input-from">от</label>
+                        <input
+                          id="number-input-from"
+                          class="number-input"
+                          type="number"
+                          value="1000"
+                          min="1000"
+                          max="7000"
+                        />
+                        <span>-</span>
+                        <label class="number-input__label" for="number-input-to">до</label>
+                        <input
+                          id="number-input-to"
+                          class="number-input"
+                          type="number"
+                          value="14000"
+                          min="1001"
+                          max="14000"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter__category filter__category-colection">
+                  <h3 class="filter__product-title filter__category-title">КОЛЛЕКЦИЯ</h3>
+                  <div class="filter__wrap">
+                    <button class="filter__category-btn filter__category-btn_active">FFF</button
+                    ><button class="filter__category-btn">Death in the Snow</button
+                    ><button class="filter__category-btn">Defame</button>
+                  </div>
+                </div>
+                <div class="filter__category filter__category-sort">
+                  <h3 class="filter__product-title filter__category-title">СОРТИРОВКА</h3>
+                  <div class="filter__wrap">
+                    <button class="filter__sort-btn filter__sort-btn_active">По умолчанию</button
+                    ><button class="filter__sort-btn">По популярности</button
+                    ><button class="filter__sort-btn">Цена по возрастанию</button>
+                    <button class="filter__sort-btn">Цена по убыванию</button>
+                    <button class="filter__sort-btn">По дате</button>
+                  </div>
+                </div>
+                <div class="filter__category filter__category-discount">
+                  <h3 class="filter__product-title filter__category-title">СОРТИРОВКА</h3>
+                  <div class="filter__wrap">
+                    <label class="toggler-wrapper style-1">
+                      <input type="checkbox" />
+                      <div class="toggler-slider">
+                        <div class="toggler-knob"></div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+                <button class="filter__show-btn">ПОКАЗАТЬ 256 ТОВАРОВ</button>
               </div>
             </div>
           </section>
@@ -609,6 +698,8 @@
         </div>
       </div>
     </footer>
+    <script src="./scripts/filter.js"></script>
+    <script src="./scripts/input.js"></script>
     <script src="./scripts/anchor-slow.js"></script>
     <script src="./scripts/swiper-home.js"></script>
     <script src="./scripts/menu.js"></script>
