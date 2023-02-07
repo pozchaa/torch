@@ -101,19 +101,6 @@ header {
   color: #191919;
 }
 
-.title::before {
-  position: absolute;
-  content: '';
-  width: 0%;
-  height: 1px;
-  background-color: #fbfbfb;
-  bottom: -4px;
-  left: 2px;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
 .title.title_black a {
   color: #191919;
 }
