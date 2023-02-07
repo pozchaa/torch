@@ -48,3 +48,7 @@
   line-height: 20px;
   margin-bottom: 1.21em;
 }
+
+.catalog__title_visible {
+  display: block;
+}

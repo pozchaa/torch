@@ -69,7 +69,7 @@
 
 .product-new__body {
   padding-top: 6.9em;
-  padding-bottom: 1em;
+  padding-bottom: 2em;
 }
 
 .product-new__title {
@@ -264,6 +264,10 @@
   color: #191919;
 }
 
+.catalog__title_visible {
+  display: none;
+}
+
 .more__btn {
   margin: 0 auto;
   font-family: 'Montserrat Medium';
@@ -279,8 +283,15 @@
   border: none;
   background: transparent;
   cursor: pointer;
+
+  margin-top: 1em;
+  margin-bottom: 3em;
 }
 
 .more__btn-text {
   margin-bottom: 1em;
+}
+
+.catalog__body {
+  position: relative;
 }

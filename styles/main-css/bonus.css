@@ -1,0 +1,102 @@
+.bonus {
+  position: absolute;
+  display: inline-block;
+  width: auto;
+  border: 2px solid #999999;
+  border-radius: 10px;
+  transform: rotate(-90deg);
+  left: -430px;
+  top: 368px;
+}
+
+.bonus__body {
+  position: relative;
+}
+
+.bonus__fill {
+  position: absolute;
+  height: 100%;
+  border-radius: 8px;
+  background: #ededed;
+  border: 1px solid #fbfbfb;
+}
+
+.bonus__wrap {
+  /* background: #0e0e0e;
+  mix-blend-mode: difference; */
+  display: flex;
+  align-items: center;
+}
+
+.bonus__split-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 29px;
+  height: 36px;
+  padding: 3px;
+
+  border-right: 2px solid #fbfbfb;
+}
+
+.bonus__split-img:last-child {
+  border: none;
+}
+
+.bonus__split-first {
+  padding-top: 0px;
+}
+
+.bonus__split-img svg {
+  transform: rotate(90deg);
+}
+
+.bonus__split-qty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 36px;
+  font-family: 'Montserrat Regular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+
+  color: #999999;
+
+  padding: 0 10px;
+  border-right: 2px solid #fbfbfb;
+}
+
+.bonus__split-third {
+  width: 86px;
+}
+
+.bonus__split-fourth {
+  width: 105px;
+}
+
+.bonus__split-fifth {
+  width: 108px;
+}
+
+.bonus__split-sixth {
+  width: 169px;
+}
+
+.bonus__split-seventh {
+  width: 150px;
+}
+
+@media screen and (max-width: 1024px) {
+  .bonus {
+    left: -415px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bonus {
+    display: none;
+  }
+}

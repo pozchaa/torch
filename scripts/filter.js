@@ -26,7 +26,7 @@ filterSortBtns.forEach(function (filterSortBtn) {
 const filterBtn = document.querySelector('.filter__btn');
 const filterBtnClear = document.querySelector('.filter__btn-clear');
 const filterBtnPlus = document.querySelector('.filter__btn-plus');
-console.log(filterBtnPlus.textContent);
+
 const filterBody = document.querySelector('.filter__body');
 
 filterBtn.addEventListener('click', function () {
@@ -41,4 +41,24 @@ filterBtn.addEventListener('click', function () {
     filterBtnPlus.textContent = '+';
     filterBtnPlus.style.top = '-1.2px';
   }
+});
+
+const filterWrapSort = document.querySelector('.filter__wrap-sort');
+const filterWrapSortArrow = document.querySelector('.filter__wrap-sort-arrow');
+
+// filterSortBtnActive.addEventListener('click', function () {
+//   filterWrapSort.classList.toggle('filter__wrap-sort_open');
+//   filterWrapSortArrow.classList.toggle('filter__wrap-sort-arrow_rotate');
+// });
+let nowWrapElem = 0;
+let filterOrder = function () {
+  return nowWrapElem--;
+};
+
+filterSortBtns.forEach(function (filterSortBtn) {
+  filterSortBtn.addEventListener('click', function (e) {
+    e.target.style.order = filterOrder();
+    filterWrapSort.classList.toggle('filter__wrap-sort_open');
+    filterWrapSortArrow.classList.toggle('filter__wrap-sort-arrow_rotate');
+  });
 });

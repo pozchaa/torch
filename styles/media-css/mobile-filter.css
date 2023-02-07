@@ -1,0 +1,180 @@
+.filter {
+  margin-top: 5em;
+}
+
+.filter__product-title {
+  font-weight: 600;
+}
+
+.filter__category {
+  display: block;
+  margin-bottom: 2em;
+}
+
+.filter__category-colection {
+  display: none;
+}
+
+.filter__wrap-size {
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow: scroll;
+}
+
+.filter__wrap-size_sroll {
+  display: flex;
+}
+
+.filter__wrap-size::-webkit-scrollbar {
+  display: none;
+}
+
+.filter__category-btn-size {
+  margin-bottom: 0 !important;
+}
+
+.filter__category-btn {
+  margin-right: 0.4em;
+  margin-bottom: 0.4em;
+}
+
+.filter__top-btn {
+  margin-bottom: 2em;
+}
+
+.filter__product-title {
+  max-width: 140px;
+  margin-bottom: 1.5em;
+}
+
+.range-slider {
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.number-group {
+  height: auto !important;
+  order: -1;
+  margin-left: -17px;
+  margin-bottom: 2em;
+  align-items: flex-start;
+}
+
+.multi-range-slider {
+  max-width: 328px;
+}
+
+input[type='range'] {
+  max-width: 320px;
+}
+
+.range-slider .number-group .number-input {
+  width: 135px;
+  height: 48px;
+}
+
+.inputs__dush {
+  top: 4px;
+  font-weight: 500;
+  font-size: 36px;
+  margin: 0 0.2em;
+}
+
+.input__currency {
+  top: 10px;
+}
+
+.input__currency_right {
+  left: 323px;
+}
+
+.filter__sort-btn {
+  white-space: nowrap;
+  padding: 0;
+}
+
+.filter__category_mobile {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter__category-discount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  order: -1;
+}
+
+.filter__category-discount > .filter__category-title {
+  white-space: nowrap;
+  display: inline;
+  margin-bottom: 0;
+}
+
+.filter__category-discount > .filter__wrap {
+  width: auto;
+}
+
+.toggler-wrapper.style-1 .toggler-knob {
+  height: calc(25px - 4px);
+}
+
+.filter__category-sort {
+  display: flex;
+}
+
+.filter__wrap-sort {
+  max-width: 180px;
+  width: 100%;
+  display: grid;
+  position: relative;
+  max-height: 17px;
+  overflow: hidden;
+  justify-items: start;
+}
+
+.filter__wrap-sort_open {
+  max-height: none;
+}
+
+.filter__wrap-sort-arrow {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 4px;
+  transition: 0.4s ease-in-out;
+}
+
+.filter__wrap-sort-arrow_rotate {
+  transform: rotate(180deg);
+}
+
+.filter__category-plus {
+  display: block;
+}
+
+@media screen and (max-width: 374px) {
+  .multi-range-slider {
+    max-width: 275px;
+  }
+
+  input[type='range'] {
+    max-width: 270px;
+  }
+
+  .range-slider .number-group .number-input {
+    width: 115px;
+  }
+
+  .input__currency {
+    left: 110px;
+  }
+
+  .input__currency_right {
+    left: 267px;
+  }
+
+  .inputs__dush {
+    margin: 0em;
+  }
+}

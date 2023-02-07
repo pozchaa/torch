@@ -1,5 +1,6 @@
 header {
   position: fixed;
+  top: 0;
   padding-top: 0.6em;
   z-index: 500;
   background: #fbfbfb;
@@ -24,6 +25,14 @@ header {
   line-height: 30px;
   position: relative;
   left: 13.5px;
+}
+
+.title__visible {
+  display: none;
+}
+
+.page {
+  font-size: 16px;
 }
 
 .title a {
