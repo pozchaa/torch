@@ -47,6 +47,10 @@
   margin-bottom: 1.5em;
 }
 
+.filter__wrap-size_sroll {
+  flex-wrap:nowrap;
+}
+
 @media screen and (max-width: 374px) {
   .filter__product-title {
     max-width: 110px;

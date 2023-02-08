@@ -65,6 +65,12 @@
   font-weight: 600;
 }
 
+.filter__wrap-size_sroll {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 790px;
+}
+
 .filter__btn-plus {
   position: relative;
   top: -1.2px;
