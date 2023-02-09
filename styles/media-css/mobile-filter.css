@@ -48,7 +48,7 @@
 }
 
 .filter__wrap-size_sroll {
-  flex-wrap:nowrap;
+  flex-wrap: nowrap;
 }
 
 @media screen and (max-width: 374px) {
@@ -79,12 +79,13 @@ input[type='range'] {
 }
 
 .range-slider .number-group .number-input {
-  width: 135px;
+  width: 130px;
   height: 48px;
 }
 
 .inputs__dush {
-  top: 4px;
+  top: -4px;
+  left: 13px;
   font-weight: 500;
   font-size: 36px;
   margin: 0 0.2em;
@@ -109,6 +110,7 @@ input[type='range'] {
 }
 
 .filter__category-discount {
+  max-width: 328px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -127,6 +129,7 @@ input[type='range'] {
 
 .toggler-wrapper.style-1 .toggler-knob {
   height: calc(25px - 4px);
+  top: 2px;
 }
 
 .filter__category-sort {
@@ -138,7 +141,7 @@ input[type='range'] {
   width: 100%;
   display: grid;
   position: relative;
-  max-height: 19px;
+  max-height: 18.5px;
   overflow: hidden;
   justify-items: start;
 }
@@ -151,7 +154,7 @@ input[type='range'] {
   display: block;
   position: absolute;
   right: 0;
-  top: 4px;
+  top: 5px;
   transition: 0.4s ease-in-out;
 }
 
@@ -161,6 +164,15 @@ input[type='range'] {
 
 .filter__category-plus {
   display: block;
+}
+
+.slider {
+  margin: 0 15px;
+}
+
+.slider > .track {
+  width: 110%;
+  left: -15px;
 }
 
 @media screen and (max-width: 374px) {
@@ -181,7 +193,7 @@ input[type='range'] {
   }
 
   .input__currency_right {
-    left: 267px;
+    left: 276px;
   }
 
   .inputs__dush {

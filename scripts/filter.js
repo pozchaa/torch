@@ -34,12 +34,16 @@ filterBtn.addEventListener('click', function () {
     filterBody.classList.add('filter__body_open');
     filterBtnClear.style.opacity = '1';
     filterBtnPlus.textContent = '-';
-    filterBtnPlus.style.top = '-3.5px';
+    filterBtnPlus.style.top = '-2.5px';
+    filterBtnPlus.style.left = '1.2px';
+    filterBtnPlus.style.transform = 'rotate(0deg)';
   } else {
     filterBody.classList.remove('filter__body_open');
     filterBtnClear.style.opacity = '0';
     filterBtnPlus.textContent = '+';
-    filterBtnPlus.style.top = '-1.2px';
+    filterBtnPlus.style.top = '1px';
+    filterBtnPlus.style.left = '0px';
+    filterBtnPlus.style.transform = 'rotate(360deg)';
   }
 });
 
@@ -50,15 +54,21 @@ const filterWrapSortArrow = document.querySelector('.filter__wrap-sort-arrow');
 //   filterWrapSort.classList.toggle('filter__wrap-sort_open');
 //   filterWrapSortArrow.classList.toggle('filter__wrap-sort-arrow_rotate');
 // });
-let nowWrapElem = 0;
-let filterOrder = function () {
-  return nowWrapElem--;
-};
+// let nowWrapElem = 0;
+// let filterOrder = function () {
+//   return nowWrapElem--;
+// };
 
 filterSortBtns.forEach(function (filterSortBtn) {
   filterSortBtn.addEventListener('click', function (e) {
-    e.target.style.order = filterOrder();
-    filterWrapSort.classList.toggle('filter__wrap-sort_open');
-    filterWrapSortArrow.classList.toggle('filter__wrap-sort-arrow_rotate');
+    if (!e.target.classList.contains('order')) {
+      e.target.classList.add('order');
+    } else {
+      e.target.classList.remove('order');
+    }
+    setTimeout(() => {
+      filterWrapSort.classList.toggle('filter__wrap-sort_open');
+      filterWrapSortArrow.classList.toggle('filter__wrap-sort-arrow_rotate');
+    }, 45);
   });
 });

@@ -1,8 +1,10 @@
 footer {
-  /* position: fixed; */
+  position: fixed;
   z-index: 500;
   bottom: 0px;
   width: 100%;
+  padding-top: 17px;
+  background: #fbfbfb;
 }
 
 .footer__body {
