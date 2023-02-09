@@ -30,20 +30,22 @@ const filterBtnPlus = document.querySelector('.filter__btn-plus');
 const filterBody = document.querySelector('.filter__body');
 
 filterBtn.addEventListener('click', function () {
+  filterBtnPlus.style.transform = 'rotate(360deg)';
   if (!filterBody.classList.contains('filter__body_open')) {
+    filterBtnPlus.style.transform = 'rotate(-360deg)';
     filterBody.classList.add('filter__body_open');
     filterBtnClear.style.opacity = '1';
     filterBtnPlus.textContent = '-';
     filterBtnPlus.style.top = '-2.5px';
     filterBtnPlus.style.left = '1.2px';
-    filterBtnPlus.style.transform = 'rotate(0deg)';
+    
   } else {
     filterBody.classList.remove('filter__body_open');
     filterBtnClear.style.opacity = '0';
     filterBtnPlus.textContent = '+';
     filterBtnPlus.style.top = '1px';
     filterBtnPlus.style.left = '0px';
-    filterBtnPlus.style.transform = 'rotate(360deg)';
+    filterBtnPlus.style.transform = 'rotate(0deg)';
   }
 });
 

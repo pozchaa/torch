@@ -64,6 +64,7 @@
 
 .filter__btn:hover .filter__btn-plus {
   transform: scale(1.15);
+  transform: rotate(360deg);
   font-weight: 600;
 }
 
@@ -74,6 +75,7 @@
 }
 
 .filter__btn-plus {
+  transform: rotate(360deg);
   position: absolute;
   top: 1px;
   left: 0;
@@ -84,7 +86,7 @@
   transition: 0.5s ease-in-out;
 }
 
-.order{
+.order {
   order: -1;
 }
 
@@ -496,7 +498,8 @@ input[type='range']::-webkit-slider-thumb {
 
 .inputs__dush {
   position: relative;
-  left: 10px;
+  left: 12px;
+  top: -3px;
   font-family: 'Montserrat Regular';
   font-style: normal;
   font-weight: 400;
@@ -525,7 +528,7 @@ input[type='range']::-webkit-slider-thumb {
 }
 
 .input__currency_right {
-  left: 304px;
+  left: 315px;
 }
 
 .filter__wrap-sort-arrow {
