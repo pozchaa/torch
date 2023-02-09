@@ -43,7 +43,7 @@ filterBtn.addEventListener('click', function () {
     filterBody.classList.remove('filter__body_open');
     filterBtnClear.style.opacity = '0';
     filterBtnPlus.textContent = '+';
-    filterBtnPlus.style.top = '1px';
+    filterBtnPlus.style.top = '0px';
     filterBtnPlus.style.left = '0px';
     filterBtnPlus.style.transform = 'rotate(0deg)';
   }
