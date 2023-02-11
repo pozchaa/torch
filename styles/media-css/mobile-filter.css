@@ -82,6 +82,7 @@
 
 .multi-range-slider {
   max-width: 375px;
+  width: 99%;
   margin: 0 !important;
 }
 
