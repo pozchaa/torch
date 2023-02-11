@@ -104,6 +104,7 @@ input[type='range'] {
 }
 
 .input__currency {
+  left: 110px;
   top: 10px;
 }
 
