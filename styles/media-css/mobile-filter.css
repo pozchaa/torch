@@ -196,6 +196,12 @@ input[type='range'] {
   left: 0px;
 }
 
+@media screen and (max-width: 375px) {
+  .slider {
+    width: 90%;
+  }
+}
+
 @media screen and (max-width: 374px) {
   .slider {
     width: 89%;
