@@ -58,24 +58,35 @@
 }
 
 .range-slider {
+  box-sizing: border-box;
+  max-width: 375px;
   align-items: flex-start;
   flex-direction: column;
 }
 
 .number-group {
+  max-width: 375px !important;
+  width: 100%;
   height: auto !important;
   order: -1;
-  margin-left: -17px;
+  /* margin-left: -17px; */
   margin-bottom: 2em;
   align-items: flex-start;
 }
 
+.input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
 .multi-range-slider {
-  max-width: 328px;
+  max-width: 375px;
+  margin: 0 !important;
 }
 
 input[type='range'] {
-  max-width: 320px;
+  max-width: 375px;
 }
 
 .range-slider .number-group .number-input {
@@ -84,11 +95,11 @@ input[type='range'] {
 }
 
 .inputs__dush {
-  top: -4px;
-  left: 13px;
+  top: -9px;
+  left: 0;
   font-weight: 500;
   font-size: 36px;
-  margin: 0 0.2em;
+  margin: 0;
 }
 
 .input__currency {
@@ -96,7 +107,7 @@ input[type='range'] {
 }
 
 .input__currency_right {
-  left: 323px;
+  left: 110px;
 }
 
 .filter__sort-btn {
@@ -110,7 +121,7 @@ input[type='range'] {
 }
 
 .filter__category-discount {
-  max-width: 328px;
+  max-width: 375px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -146,6 +157,12 @@ input[type='range'] {
   justify-items: start;
 }
 
+.filter__sort-btn {
+  width: 100%;
+  text-align: left;
+  z-index: 50;
+}
+
 .filter__wrap-sort_open {
   max-height: none;
 }
@@ -167,34 +184,40 @@ input[type='range'] {
 }
 
 .slider {
-  margin: 0 15px;
+  box-sizing: border-box;
+  width: 91%;
+  max-width: 350px;
+  /* margin: 0 !important; */
 }
 
 .slider > .track {
-  width: 110%;
-  left: -15px;
+  width: 100%;
+  left: 0px;
 }
 
 @media screen and (max-width: 374px) {
-  .multi-range-slider {
-    max-width: 275px;
+  .slider {
+    width: 89%;
   }
+  /* .multi-range-slider {
+    max-width: 275px;
+  } */
 
   input[type='range'] {
     max-width: 270px;
   }
 
-  .range-slider .number-group .number-input {
+  /* .range-slider .number-group .number-input {
     width: 115px;
-  }
+  } */
 
   .input__currency {
     left: 110px;
   }
 
-  .input__currency_right {
+  /* .input__currency_right {
     left: 276px;
-  }
+  } */
 
   .inputs__dush {
     margin: 0em;

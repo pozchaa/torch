@@ -9,6 +9,12 @@ header {
   margin: 0 auto;
 }
 
+.header_shadow {
+  max-width: 100%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  padding-bottom: 20px;
+}
+
 .navigation {
   display: flex;
   justify-content: space-between;

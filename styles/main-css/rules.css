@@ -1,0 +1,63 @@
+.rules {
+  max-width: 820px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.rules__title {
+  font-family: 'Montserrat Medium';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.28em;
+  line-height: 22px;
+  /* identical to box height */
+
+  color: #191919;
+  margin-bottom: 14px;
+}
+
+.rules__li {
+  font-family: 'Montserrat Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.28em;
+  line-height: 22px;
+
+  color: #191919;
+  margin-bottom: 14px;
+}
+
+.rules__li a {
+  text-decoration: none;
+  color: #191919;
+}
+
+.rules__picture {
+  display: flex;
+  align-items: center;
+}
+
+.rules__picture li {
+  margin-right: 37px;
+}
+
+.rules__li strong {
+  font-family: 'Montserrat Regular';
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+
+  color: #191919;
+}
+
+@media screen and (max-width: 768px) {
+  .rules {
+    padding-top: 90px;
+  }
+
+  .rules__title,
+  .rules__li {
+    font-size: 1em;
+  }
+}

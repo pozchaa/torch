@@ -35,13 +35,21 @@
 }
 
 .card__img {
+  display: block;
+  background-color: #f3f3f3;
   width: 100%;
+  height: 100%;
+  max-height: 100%;
+  /* height: 23em; */
 }
 
 .card__img img {
   /* max-height: 345px; */
   width: 100%;
-  object-fit: contain;
+  background-color: #f3f3f3;
+  max-height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .card__sale {

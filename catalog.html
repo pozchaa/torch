@@ -354,16 +354,23 @@
                         </div>
                       </div>
                       <div class="number-group">
-                        <label class="number-input__label" for="number-input-from">от</label>
-                        <input
-                          id="number-input-from"
-                          class="number-input"
-                          type="number"
-                          value="1000"
-                          min="1000"
-                          max="13999"
-                        />
-                        <span class="input__currency">₽</span>
+                        <div class="input-wrap">
+                          <label
+                            class="number__input-label number__input-label_from"
+                            for="number-input-from"
+                            >от</label
+                          >
+                          <input
+                            id="number-input-from"
+                            class="number-input"
+                            type="number"
+                            value="1000"
+                            min="1000"
+                            max="13999"
+                          />
+                          <span class="input__currency">₽</span>
+                        </div>
+                        
                         <span class="inputs__dush"
                           ><svg
                             width="17"
@@ -375,16 +382,23 @@
                             <rect width="17" height="1" fill="#CCCCCC" />
                           </svg>
                         </span>
-                        <label class="number-input__label" for="number-input-to">до</label>
-                        <input
-                          id="number-input-to"
-                          class="number-input"
-                          type="number"
-                          value="14000"
-                          min="1001"
-                          max="14000"
-                        />
-                        <span class="input__currency input__currency_right">₽</span>
+                        <div class="input-wrap">
+                          <label
+                            class="number__input-label number__input-label_to"
+                            for="number-input-to"
+                            >до</label
+                          >
+                          <input
+                            id="number-input-to"
+                            class="number-input"
+                            type="number"
+                            value="14000"
+                            min="1001"
+                            max="14000"
+                          />
+                          <span class="input__currency input__currency_right">₽</span>
+                        </div>
+                        
                       </div>
                     </div>
                   </div>
@@ -427,7 +441,8 @@
                         ></line>
                       </svg>
 
-                      <button class="filter__sort-btn filter__sort-btn_active order">По умолчанию</button
+                      <button class="filter__sort-btn filter__sort-btn_active order">
+                        По умолчанию</button
                       ><button class="filter__sort-btn">По популярности</button
                       ><button class="filter__sort-btn">Цена по возрастанию</button>
                       <button class="filter__sort-btn">Цена по убыванию</button>
@@ -870,7 +885,7 @@
     <script src="./scripts/filter.js"></script>
     <script src="./scripts/input.js"></script>
     <script src="./scripts/anchor-slow.js"></script>
-    <script src="./scripts/menu.js"></script>
+    <!-- <script src="./scripts/menu.js"></script> -->
     <script src="./scripts/card.js"></script>
   </body>
 </html>
