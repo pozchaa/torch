@@ -1,0 +1,70 @@
+@media screen and (max-width:768.98px) {
+  header {
+    position: fixed;
+    top: 0;
+    padding-top: 0.6em;
+    z-index: 500;
+    background: #fbfbfb;
+  }
+  
+  .navigation-header {
+    display: none;
+  }
+  
+  .menu__btn {
+    padding: 0;
+    display: block;
+    background-color: transparent;
+    border: none;
+  }
+  
+  .title {
+    font-family: 'Poppins Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    position: relative;
+    left: 13.5px;
+  }
+  
+  .title__visible {
+    display: none;
+  }
+  
+  .page {
+    font-size: 16px;
+  }
+  
+  .title a {
+    color: #191919;
+  }
+  .visitor__item_cart,
+  .visitor__item_forever {
+    display: none;
+  }
+  
+  .svg-elem-1,
+  .svg-elem-2,
+  .svg-user-1,
+  .svg-user-2 {
+    stroke: black;
+  }
+  
+  .page-position {
+    align-items: center;
+  }
+  
+  .visitor__list {
+    max-width: 3.52em;
+  }
+  
+  .home-image__anchor-block {
+    display: none;
+  }
+  
+  .hamburger__body {
+    display: block;
+  }
+}
+

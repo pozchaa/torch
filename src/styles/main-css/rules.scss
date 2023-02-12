@@ -3,6 +3,11 @@
   margin: 0 auto;
   padding-top: 30px;
   padding-bottom: 40px;
+  min-height: 100vh;
+}
+
+.rules__ul {
+  margin-bottom: 20px;
 }
 
 .rules__title {
@@ -14,7 +19,7 @@
   /* identical to box height */
 
   color: #191919;
-  margin-bottom: 14px;
+  margin-bottom: 20px;
 }
 
 .rules__li {
