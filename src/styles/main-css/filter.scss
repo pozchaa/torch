@@ -383,8 +383,8 @@
 
 input[type='range'] {
   position: absolute;
-  /* margin-left: 10px; */
-  max-width: 180px;
+  margin-left: 17px; 
+  max-width: 195px;
   pointer-events: none;
   -webkit-appearance: none;
   z-index: 2;
@@ -394,7 +394,7 @@ input[type='range'] {
 }
 
 input[type='range']:first-child:first-child {
-  /* margin-left: -10px; */
+   margin-left: 0px; 
 }
 
 input[type='range']::-webkit-slider-thumb {

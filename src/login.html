@@ -1,44 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="./styles/main-css/styles.css" />
-    <link rel="stylesheet" href="./styles/main-css/header.css" />
-    <link rel="stylesheet" href="./styles/main-css/main.css" />
-    <link rel="stylesheet" href="./styles/main-css/menu.css" />
-    <link rel="stylesheet" href="./styles/main-css/footer.css" />
-    <link rel="stylesheet" href="./styles/main-css/svg-animation.css" />
-    <link rel="stylesheet" href="./styles/main-css/rules.css" />
-    <link
-      rel="stylesheet"
-      media="screen and (max-width:768.98px)"
-      href="./styles/media-css/tablet-styles.css"
-    />
-    <link
-      rel="stylesheet"
-      media="screen and (max-width:768.98px)"
-      href="./styles/media-css/tablet-header.css"
-    />
-    <link
-      rel="stylesheet"
-      media="screen and (max-width:768.98px)"
-      href="./styles/media-css/tablet-main.css"
-    />
-    <link
-      rel="stylesheet"
-      media="screen and (max-width:768.98px)"
-      href="./styles/media-css/mobile-filter.css"
-    />
-
-    <link
-      rel="stylesheet"
-      media="screen and (max-width:768.98px)"
-      href="./styles/media-css/tablet-footer.css"
-    /> -->
-    <title>ОПЛАТА, ДОСТАВКА И ВОЗВРАТ</title>
+    <title>Login</title>
   </head>
   <body>
     <header class="header_shadow">
@@ -94,8 +60,9 @@
               </svg>
             </a>
           </div>
-          <h1 class="title title_black title__catalog">
-            <a href="#">TORCH</a>
+          <h1 class="title title_black">
+            <p class="title_mobile">Вход</p>
+            <a class="title_desktop" href="#"> TORCH</a>
           </h1>
           <ul class="visitor__list">
             <li class="visitor__item visitor__item_search visitor__item_black">
@@ -266,168 +233,43 @@
     </ul>
     <main>
       <div class="container">
-        <section class="rules">
-          <ul class="rules__ul pay">
-            <li><h2 class="rules__title">ОПЛАТА</h2></li>
-            <li class="rules__li">
-              <p><strong>Оплата осуществляется с помощью:</strong></p>
-            </li>
-            <li class="rules__li"
-              ><p>Банковских карт VISA, MasterCard, МИР;</p></li
-            >
-            <ul class="rules__picture">
-              <li>
-                ​<picture>
-                  <source
-                    srcset="./img/rules/visa-img.png"
-                    type="image/png+xml"
-                  />
-                  <img src="./img/rules/visa-img.png" alt="MDN" />
-                </picture>
-              </li>
-              <li>
-                ​<picture>
-                  <source
-                    srcset="./img/rules/mastercard-img.png"
-                    type="image/png+xml"
-                  />
-                  <img src="./img/rules/mastercard-img.png" alt="MDN" />
-                </picture>
-              </li>
-              <li>
-                ​<picture>
-                  <source
-                    srcset="./img/rules/mir-img.png"
-                    type="image/png+xml"
-                  />
-                  <img src="./img/rules/mir-img.png" alt="MDN" />
-                </picture>
-              </li>
-            </ul>
-            <ul>
-              <li class="rules__li"><p>Интернет кошельков PayPal, QIWI.</p></li>
-              <ul class="rules__picture">
-                <li>
-                  ​<picture>
-                    <source
-                      srcset="./img/rules/paypal-img.png"
-                      type="image/png+xml"
-                    />
-                    <img src="./img/rules/paypal-img.png" alt="MDN" />
-                  </picture>
-                </li>
-                <li>
-                  ​<picture>
-                    <source
-                      srcset="./img/rules/mastercard-img.png"
-                      type="image/png+xml"
-                    />
-                    <img src="./img/rules/qiwi-img.png" alt="MDN" />
-                  </picture>
-                </li>
-              </ul>
-            </ul>
-          </ul>
-          <ul class="rules__ul delivery">
-            <li><h2 class="rules__title">ДОСТАВКА</h2></li>
-            <li class="rules__li">
-              <p><strong>Стоимость доставки по РФ:</strong> 250 ₽</p>
-              <p>При заказе от 6 000 ₽ доставка <strong>бесплатно.</strong></p>
-              <p
-                >Посылка поступает на почтовое отделение по указанному
-                индексу.</p
+        <section class="login">
+          <div class="login__body">
+            <div class="login__block">
+              <h2 class="login__title">ВХОД</h2>
+              <form class="login__form" action="" method="post">
+                <label>EMAIL</label>
+                <input
+                  class="login__input login__input-email"
+                  type="email"
+                  placeholder="torch_torch@list.ru"
+                />
+                <label>ПАРОЛЬ</label>
+                <input
+                  class="login__input login__input-password"
+                  type="password"
+                  placeholder="***************"
+                />
+                <p class="login__help"><a href="#">ЗАБЫЛИ ПАРОЛЬ?</a></p>
+                <input
+                  class="login__input login__input-submit"
+                  type="submit"
+                  value="ВОЙТИ"
+                />
+                <ul class="login__or">
+                  <li class="login__text"><p>ИЛИ</p></li>
+                </ul>
+                <input
+                  class="login__input login__input-vk"
+                  type="submit"
+                  value="ВОЙТИ С ВКОНТАКТЕ"
+                />
+              </form>
+              <p class="login__description">
+                <a href="#">ЗАРЕГИСТРИРОВАТЬСЯ </a></p
               >
-            </li>
-            <li class="rules__li">
-              <p>
-                <strong>Время доставки:</strong> от 4 до 14 дней, в зависимости
-                от удаленности адресата от г. Москвы.
-              </p>
-            </li>
-            <li class="rules__li">
-              <p>
-                <strong>Стоимость доставки по миру</strong> рассчитывается
-                сайтом в зависимости от веса отправления.
-              </p>
-            </li>
-            <li class="rules__li">
-              <p><strong>Время доставки:</strong> в среднем от 7 до 20 дней.</p>
-            </li>
-            <li class="rules__li">
-              <p>
-                <strong>Внимание:</strong> когда посылка пересекает таможню и
-                границу РФ и оказывается на территории страны адресата, за
-                посылку начинает отвечать Почта отправляемой страны. Если
-                посылка доставляется дольше ожидаемого срока, стоит обратиться в
-                местное почтовое отделение.
-              </p>
-            </li>
-            <li class="rules__li">
-              <p>
-                <strong>Отслеживание посылки.</strong> После оплаты вы получаете
-                чек, и в течение 2-4 рабочих дней происходит отправка товара.
-                После отправки вам придет трек-код. Вся информация поступает на
-                указанную при оформлении заказа электронную почту.
-              </p>
-            </li>
-            <li class="rules__li">
-              <p>
-                <strong>Отслеживание посылки.</strong> После оплаты вы получаете
-                чек, и в течение 2-4 рабочих дней происходит отправка товара.
-                После отправки вам придет трек-код. Вся информация поступает на
-                указанную при оформлении заказа электронную почту.
-              </p>
-            </li>
-            <li class="rules__li">
-              <p>
-                <strong
-                  >Отслеживание посылки по трек-коду:
-                  <a href="https://www.pochta.ru/tracking"
-                    >www.pochta.ru/tracking</a
-                  >.</strong
-                >
-              </p>
-            </li>
-          </ul>
-          <ul class="rules__ul refund">
-            <li><h2 class="rules__title">ВОЗВРАТ</h2></li>
-            <li class="rules__li">
-              <p>
-                Возврат осуществляется на обратный адрес, указанный на почтовом
-                пакете и
-                <strong>не позднее, чем через 7 дней после получения.</strong>
-              </p>
-              <p>
-                Возврат товара возможен в случае, если сохранен его товарный
-                вид, потребительские свойства, а также документ, подтверждающий
-                факт и условия покупки указанного товара.
-              </p>
-            </li>
-            <li class="rules__li">
-              <p>
-                При запросе возврата денежных средств в случае отказа от
-                покупки, возврат производится
-                <strong
-                  >исключительно на ту же банковскую карту, с которой была
-                  произведена оплата.</strong
-                >
-              </p>
-              <p
-                >Возврат/обмен по нашей вине (дефект, брак и т.д.):
-                <strong>бесплатно.</strong></p
-              >
-              <p
-                >Обмен по желанию покупателя (не подошёл размер и т.д.): 200
-                ₽</p
-              >
-            </li>
-            <li class="rules__li">
-              <p
-                >Подробнее: (ст. 26.1 / ст. 30) фз. «О защите прав
-                потребителей».</p
-              >
-            </li>
-          </ul>
+            </div>
+          </div>
         </section>
       </div>
     </main>
