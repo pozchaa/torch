@@ -123,6 +123,16 @@ module.exports = {
         collapseWhitespace: false
       }
     }),
+    new HtmlWebpackPlugin({
+      title: 'Forever',
+      filename: 'forever.html',
+      template: './src/forever.html',
+      inject: true,
+      minify: {
+        removeComments: true,
+        collapseWhitespace: false
+      }
+    }),
     // Кладем стили в отдельный файлик
     new MiniCssExtractPlugin({
       filename: 'style.css'
