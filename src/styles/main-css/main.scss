@@ -85,6 +85,32 @@
   margin-bottom: 47px;
 }
 
+.product-recommend__title {
+  font-family: 'Montserrat Medium';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+
+  color: #191919;
+
+  margin-bottom: 18px;
+}
+
+.product-sold__title {
+  font-family: 'Montserrat Medium';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+
+  color: #191919;
+
+  margin-bottom: 18px;
+}
+
 .card-list__home {
   margin-bottom: 2.81em;
 }
@@ -301,3 +327,5 @@
 .catalog__body {
   position: relative;
 }
+
+

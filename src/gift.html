@@ -11,7 +11,7 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <title>TORCH / КАТАЛОГ</title>
+    <title>TORCH / GIFT</title>
   </head>
   <body>
     <header>
@@ -68,10 +68,7 @@
             </a>
           </div>
           <h1 class="title title_black title__catalog">
-            <a href="#"
-              ><span class="title__visible">TORCH /</span>
-              <span class="page">КАТАЛОГ</span></a
-            >
+            <a href="#"><span class="title__visible">TORCH</span></a>
           </h1>
           <ul class="visitor__list">
             <li class="visitor__item visitor__item_search visitor__item_black">
@@ -243,256 +240,6 @@
     <main>
       <div class="container">
         <section class="catalog">
-          <section class="filter">
-            <p class="filter__top-btn">
-              <button class="filter__btn"
-                ><span class="filter__btn-plus">+</span> ФИЛЬТР</button
-              >
-              <button class="filter__btn-clear">СБРОСИТЬ</button>
-            </p>
-            <div class="filter__body">
-              <div class="filter__body-wrap">
-                <div class="filter__category filter__category-type">
-                  <h3 class="filter__product-title filter__category-title"
-                    >КАТЕГОРИЯ</h3
-                  >
-                  <div class="filter__wrap">
-                    <button
-                      class="filter__category-btn filter__category-btn-type filter__category-btn_active"
-                    >
-                      Футболки</button
-                    ><button
-                      class="filter__category-btn filter__category-btn-type"
-                    >
-                      Толстовки</button
-                    ><button
-                      class="filter__category-btn filter__category-btn-type"
-                      >Рубашки</button
-                    ><button
-                      class="filter__category-btn filter__category-btn-type"
-                    >
-                      Лонгсливы</button
-                    ><button
-                      class="filter__category-btn filter__category-btn-type"
-                      >Бадлоны</button
-                    ><button
-                      class="filter__category-btn filter__category-btn-type"
-                      >Джинсы</button
-                    ><button
-                      class="filter__category-btn filter__category-btn-type"
-                      >Джемперы</button
-                    ><button
-                      class="filter__category-btn filter__category-btn-type"
-                      >Свитеры</button
-                    ><button
-                      class="filter__category-btn filter__category-btn-type"
-                      >Жилеты</button
-                    ><button
-                      class="filter__category-btn filter__category-btn-type"
-                      >Брюки</button
-                    ><button
-                      class="filter__category-btn filter__category-btn-type"
-                      >Шорты</button
-                    ><button
-                      class="filter__category-btn filter__category-btn-type"
-                    >
-                      Аксессуары</button
-                    ><button
-                      class="filter__category-btn filter__category-btn-type"
-                      >Носки</button
-                    ><button
-                      class="filter__category-btn filter__category-btn-type"
-                      >Сумки</button
-                    >
-                  </div>
-                </div>
-                <div class="filter__category filter__category-size">
-                  <h3 class="filter__product-title filter__category-title"
-                    >РАЗМЕР</h3
-                  >
-                  <div class="filter__wrap filter__wrap-size">
-                    <div class="filter__wrap-size_sroll">
-                      <button
-                        class="filter__category-btn filter__category-btn-size filter__category-btn_active"
-                      >
-                        XS</button
-                      ><button
-                        class="filter__category-btn filter__category-btn-size"
-                        >S</button
-                      ><button
-                        class="filter__category-btn filter__category-btn-size"
-                        >M</button
-                      ><button
-                        class="filter__category-btn filter__category-btn-size"
-                        >L</button
-                      ><button
-                        class="filter__category-btn filter__category-btn-size"
-                        >XL</button
-                      ><button
-                        class="filter__category-btn filter__category-btn-size"
-                        >XXL</button
-                      ><button
-                        class="filter__category-btn filter__category-btn-size"
-                        >3XL</button
-                      >
-                    </div>
-                  </div>
-                </div>
-                <div class="filter__category filter__category-price">
-                  <h3 class="filter__product-title filter__category-title"
-                    >ЦЕНА</h3
-                  >
-                  <div class="filter__wrap">
-                    <div id="rangeSlider" class="range-slider">
-                      <div class="multi-range-slider">
-                        <input
-                          type="range"
-                          id="input-left"
-                          min="1000"
-                          max="14000"
-                          value="1000"
-                        />
-                        <input
-                          type="range"
-                          id="input-right"
-                          min="1000"
-                          max="14000"
-                          value="14000"
-                        />
-
-                        <div class="slider">
-                          <div class="track"></div>
-                          <div class="range"></div>
-                          <div class="thumb left"></div>
-                          <div class="thumb right"></div>
-                        </div>
-                      </div>
-                      <div class="number-group">
-                        <div class="input-wrap">
-                          <label
-                            class="number__input-label number__input-label_from"
-                            for="number-input-from"
-                            >от</label
-                          >
-                          <input
-                            id="number-input-from"
-                            class="number-input"
-                            type="number"
-                            value="1000"
-                            min="1000"
-                            max="13999"
-                          />
-                          <span class="input__currency">₽</span>
-                        </div>
-
-                        <span class="inputs__dush"
-                          ><svg
-                            width="17"
-                            height="1"
-                            viewBox="0 0 17 1"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <rect width="17" height="1" fill="#CCCCCC" />
-                          </svg>
-                        </span>
-                        <div class="input-wrap">
-                          <label
-                            class="number__input-label number__input-label_to"
-                            for="number-input-to"
-                            >до</label
-                          >
-                          <input
-                            id="number-input-to"
-                            class="number-input"
-                            type="number"
-                            value="14000"
-                            min="1001"
-                            max="14000"
-                          />
-                          <span class="input__currency input__currency_right"
-                            >₽</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="filter__category filter__category-colection">
-                  <h3 class="filter__product-title filter__category-title"
-                    >КОЛЛЕКЦИЯ</h3
-                  >
-                  <div class="filter__wrap">
-                    <button
-                      class="filter__category-btn filter__category-btn_active"
-                      >FFF</button
-                    ><button class="filter__category-btn"
-                      >Death in the Snow</button
-                    ><button class="filter__category-btn">Defame</button>
-                  </div>
-                </div>
-                <div class="filter__category_mobile">
-                  <div class="filter__category filter__category-sort">
-                    <h3 class="filter__product-title filter__category-title"
-                      >СОРТИРОВКА</h3
-                    >
-                    <div class="filter__wrap filter__wrap-sort">
-                      <svg
-                        class="filter__wrap-sort-arrow"
-                        width="13"
-                        height="7"
-                        viewBox="0 0 13 7"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <line
-                          x1="12.3536"
-                          y1="0.353553"
-                          x2="6.14516"
-                          y2="6.56195"
-                          stroke="#191919"
-                          class="svg-filter-arrow-1"
-                        ></line>
-                        <line
-                          y1="-0.5"
-                          x2="8.48528"
-                          y2="-0.5"
-                          transform="matrix(0.707107 0.707107 0.707107 -0.707107 1 0)"
-                          stroke="#191919"
-                          class="svg-filter-arrow-2"
-                        ></line>
-                      </svg>
-
-                      <button
-                        class="filter__sort-btn filter__sort-btn_active order"
-                      >
-                        По умолчанию</button
-                      ><button class="filter__sort-btn">По популярности</button
-                      ><button class="filter__sort-btn"
-                        >Цена по возрастанию</button
-                      >
-                      <button class="filter__sort-btn">Цена по убыванию</button>
-                      <button class="filter__sort-btn">По дате</button>
-                    </div>
-                  </div>
-                  <div class="filter__category filter__category-discount">
-                    <h3 class="filter__product-title filter__category-title"
-                      >ТОВАРЫ СО СКИДКОЙ</h3
-                    >
-                    <div class="filter__wrap">
-                      <label class="toggler-wrapper style-1">
-                        <input type="checkbox" />
-                        <div class="toggler-slider">
-                          <div class="toggler-knob"></div>
-                        </div>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <button class="filter__show-btn">ПОКАЗАТЬ 256 ТОВАРОВ</button>
-              </div>
-            </div>
-          </section>
           <div class="catalog__body">
             <aside class="bonus">
               <div class="bonus__body">
@@ -628,245 +375,237 @@
                 </div>
               </div>
             </aside>
-            <h2 class="catalog__title catalog__title_visible">КАТАЛОГ</h2>
-            <div class="cards-list">
-              <article class="card">
-                <div class="card__body">
-                  <ul class="card__header">
-                    <li class="card__sale card__sale_mobile">SOLDOUT</li>
-                    <li class="card__zoom"
-                      ><button class="card__zoom-btn"></button
-                    ></li>
-                  </ul>
-                  <div class="card__img">
-                    <img src="./img/cards/image 1.png" alt="card-img" />
-                  </div>
-                  <div class="card__block-btn">
-                    <button
-                      class="card__forever-btn card__forever-btn_active"
-                    ></button>
-                  </div>
-                </div>
-                <div class="card__footer">
-                  <p class="card__name"
-                    ><span class="card__name_mobile">ФУТБОЛКА</span> HAUNTED</p
-                  >
-                  <p class="card__price">2 200 ₽</p>
-                </div>
-              </article>
-
-              <article class="card">
-                <div class="card__body">
-                  <ul class="card__header">
-                    <li class="card__sale card__sale_mobile">SOLDOUT</li>
-                    <li class="card__zoom"
-                      ><button class="card__zoom-btn"></button
-                    ></li>
-                  </ul>
-                  <div class="card__img">
-                    <img src="./img/cards/image 1.png" alt="card-img" />
-                  </div>
-                  <div class="card__block-btn">
-                    <button class="card__forever-btn"></button>
-                  </div>
-                </div>
-                <div class="card__footer">
-                  <p class="card__name"
-                    ><span class="card__name_mobile">ФУТБОЛКА</span> HAUNTED</p
-                  >
-                  <p class="card__price">2 200 ₽</p>
-                </div>
-              </article>
-
-              <article class="card">
-                <div class="card__body">
-                  <ul class="card__header">
-                    <li class="card__sale card__sale_mobile">SOLDOUT</li>
-                    <li class="card__zoom"
-                      ><button class="card__zoom-btn"></button
-                    ></li>
-                  </ul>
-                  <div class="card__img">
-                    <img src="./img/cards/image 1.png" alt="card-img" />
-                  </div>
-                  <div class="card__block-btn">
-                    <button class="card__forever-btn"></button>
-                  </div>
-                </div>
-                <div class="card__footer">
-                  <p class="card__name"
-                    ><span class="card__name_mobile">ФУТБОЛКА</span> HAUNTED</p
-                  >
-                  <p class="card__price">2 200 ₽</p>
-                </div>
-              </article>
-
-              <article class="card">
-                <div class="card__body">
-                  <ul class="card__header">
-                    <li class="card__sale card__sale_mobile">SOLDOUT</li>
-                    <li class="card__zoom"
-                      ><button class="card__zoom-btn"></button
-                    ></li>
-                  </ul>
-                  <div class="card__img">
-                    <img src="./img/cards/image 1.png" alt="card-img" />
-                  </div>
-                  <div class="card__block-btn">
-                    <button class="card__forever-btn"></button>
-                  </div>
-                </div>
-                <div class="card__footer">
-                  <p class="card__name"
-                    ><span class="card__name_mobile">ФУТБОЛКА</span> HAUNTED</p
-                  >
-                  <p class="card__price">2 200 ₽</p>
-                </div>
-              </article>
-
-              <article class="card">
-                <div class="card__body">
-                  <ul class="card__header">
-                    <li class="card__sale card__sale_mobile">SOLDOUT</li>
-                    <li class="card__zoom"
-                      ><button class="card__zoom-btn"></button
-                    ></li>
-                  </ul>
-                  <div class="card__img">
-                    <img src="./img/cards/image 1.png" alt="card-img" />
-                  </div>
-                  <div class="card__block-btn">
-                    <button class="card__forever-btn"></button>
-                  </div>
-                </div>
-                <div class="card__footer">
-                  <p class="card__name"
-                    ><span class="card__name_mobile">ФУТБОЛКА</span> HAUNTED</p
-                  >
-                  <p class="card__price">2 200 ₽</p>
-                </div>
-              </article>
-
-              <article class="card">
-                <div class="card__body">
-                  <ul class="card__header">
-                    <li class="card__sale card__sale_mobile">SOLDOUT</li>
-                    <li class="card__zoom"
-                      ><button class="card__zoom-btn"></button
-                    ></li>
-                  </ul>
-                  <div class="card__img">
-                    <img src="./img/cards/image 1.png" alt="card-img" />
-                  </div>
-                  <div class="card__block-btn">
-                    <button class="card__forever-btn"></button>
-                  </div>
-                </div>
-                <div class="card__footer">
-                  <p class="card__name"
-                    ><span class="card__name_mobile">ФУТБОЛКА</span> HAUNTED</p
-                  >
-                  <p class="card__price">2 200 ₽</p>
-                </div>
-              </article>
-
-              <article class="card">
-                <div class="card__body">
-                  <ul class="card__header">
-                    <li class="card__sale card__sale_mobile">SOLDOUT</li>
-                    <li class="card__zoom"
-                      ><button class="card__zoom-btn"></button
-                    ></li>
-                  </ul>
-                  <div class="card__img">
-                    <img src="./img/cards/image 1.png" alt="card-img" />
-                  </div>
-                  <div class="card__block-btn">
-                    <button class="card__forever-btn"></button>
-                  </div>
-                </div>
-                <div class="card__footer">
-                  <p class="card__name"
-                    ><span class="card__name_mobile">ФУТБОЛКА</span> HAUNTED</p
-                  >
-                  <p class="card__price">2 200 ₽</p>
-                </div>
-              </article>
-
-              <article class="card">
-                <div class="card__body">
-                  <ul class="card__header">
-                    <li class="card__sale card__sale_mobile">SOLDOUT</li>
-                    <li class="card__zoom"
-                      ><button class="card__zoom-btn"></button
-                    ></li>
-                  </ul>
-                  <div class="card__img">
-                    <img src="./img/cards/image 1.png" alt="card-img" />
-                  </div>
-                  <div class="card__block-btn">
-                    <button class="card__forever-btn"></button>
-                  </div>
-                </div>
-                <div class="card__footer">
-                  <p class="card__name"
-                    ><span class="card__name_mobile">ФУТБОЛКА</span> HAUNTED</p
-                  >
-                  <p class="card__price">2 200 ₽</p>
-                </div>
-              </article>
-
-              <article class="card">
-                <div class="card__body">
-                  <ul class="card__header">
-                    <li class="card__sale card__sale_mobile">SOLDOUT</li>
-                    <li class="card__zoom"
-                      ><button class="card__zoom-btn"></button
-                    ></li>
-                  </ul>
-                  <div class="card__img">
-                    <img src="./img/cards/image 1.png" alt="card-img" />
-                  </div>
-                  <div class="card__block-btn">
-                    <button class="card__forever-btn"></button>
-                  </div>
-                </div>
-                <div class="card__footer">
-                  <p class="card__name"
-                    ><span class="card__name_mobile">ФУТБОЛКА</span> HAUNTED</p
-                  >
-                  <p class="card__price">2 200 ₽</p>
-                </div>
-              </article>
-            </div>
+            <section class="gift">
+              <ul class="gift__wrap">
+                <li class="gift__title">
+                  <h2>ВЫБЕРИТЕ ПОДАРОК!</h2>
+                </li>
+                <li class="gift__title-text">
+                  <p>
+                    Вы получите выбранный товар в подарок к вашему заказу.
+                  </p>
+                </li>
+                <ul class="gift-cards__block">
+                  <article class="card card__gift">
+                    <div class="card__body">
+                      <ul class="card__header">
+                        <li class="card__zoom">
+                          <button class="card__zoom-btn"></button>
+                        </li>
+                      </ul>
+                      <a class="card__img">
+                        <img src="./img/cards/image 1.png" alt="card-img" />
+                      </a>
+                    </div>
+                    <div class="card__footer">
+                      <p class="card__name">
+                        <span class="card__name_mobile">ФУТБОЛКА</span> HAUNTED
+                      </p>
+                      <ul class="card__btn-list">
+                        <li
+                          ><button class="card__btn card__btn_non-active"
+                            >XS</button
+                          ></li
+                        >
+                        <li><button class="card__btn">S</button></li>
+                        <li><button class="card__btn">M</button></li>
+                        <li
+                          ><button class="card__btn card__btn_active"
+                            >L</button
+                          ></li
+                        >
+                        <li><button class="card__btn">XL</button></li>
+                        <li
+                          ><button class="card__btn card__btn_non-active"
+                            >2XL</button
+                          ></li
+                        >
+                        <li
+                          ><button class="card__btn card__btn_non-active"
+                            >3XL</button
+                          ></li
+                        >
+                      </ul>
+                      <button class="card-btn__select">ВЫБРАТЬ</button>
+                    </div>
+                  </article>
+                  <article class="card card__gift">
+                    <div class="card__body">
+                      <ul class="card__header">
+                        <li class="card__zoom">
+                          <button class="card__zoom-btn"></button>
+                        </li>
+                      </ul>
+                      <a class="card__img">
+                        <img src="./img/cards/image 1.png" alt="card-img" />
+                      </a>
+                    </div>
+                    <div class="card__footer">
+                      <p class="card__name">
+                        <span class="card__name_mobile">ФУТБОЛКА</span> HAUNTED
+                      </p>
+                      <ul class="card__btn-list">
+                        <li
+                          ><button class="card__btn card__btn_non-active"
+                            >XS</button
+                          ></li
+                        >
+                        <li><button class="card__btn">S</button></li>
+                        <li><button class="card__btn">M</button></li>
+                        <li
+                          ><button class="card__btn card__btn_active"
+                            >L</button
+                          ></li
+                        >
+                        <li><button class="card__btn">XL</button></li>
+                        <li
+                          ><button class="card__btn card__btn_non-active"
+                            >2XL</button
+                          ></li
+                        >
+                        <li
+                          ><button class="card__btn card__btn_non-active"
+                            >3XL</button
+                          ></li
+                        >
+                      </ul>
+                      <button class="card-btn__select">ВЫБРАТЬ</button>
+                    </div>
+                  </article>
+                  <article class="card card__gift">
+                    <div class="card__body">
+                      <ul class="card__header">
+                        <li class="card__zoom">
+                          <button class="card__zoom-btn"></button>
+                        </li>
+                      </ul>
+                      <a class="card__img">
+                        <img src="./img/cards/image 1.png" alt="card-img" />
+                      </a>
+                    </div>
+                    <div class="card__footer">
+                      <p class="card__name">
+                        <span class="card__name_mobile">ФУТБОЛКА</span> HAUNTED
+                      </p>
+                      <ul class="card__btn-list">
+                        <li
+                          ><button class="card__btn card__btn_non-active"
+                            >XS</button
+                          ></li
+                        >
+                        <li><button class="card__btn">S</button></li>
+                        <li><button class="card__btn">M</button></li>
+                        <li
+                          ><button class="card__btn card__btn_active"
+                            >L</button
+                          ></li
+                        >
+                        <li><button class="card__btn">XL</button></li>
+                        <li
+                          ><button class="card__btn card__btn_non-active"
+                            >2XL</button
+                          ></li
+                        >
+                        <li
+                          ><button class="card__btn card__btn_non-active"
+                            >3XL</button
+                          ></li
+                        >
+                      </ul>
+                      <button class="card-btn__select">ВЫБРАТЬ</button>
+                    </div>
+                  </article>
+                  <article class="card card__gift">
+                    <div class="card__body">
+                      <ul class="card__header">
+                        <li class="card__zoom">
+                          <button class="card__zoom-btn"></button>
+                        </li>
+                      </ul>
+                      <a class="card__img">
+                        <img src="./img/cards/image 1.png" alt="card-img" />
+                      </a>
+                    </div>
+                    <div class="card__footer">
+                      <p class="card__name">
+                        <span class="card__name_mobile">ФУТБОЛКА</span> HAUNTED
+                      </p>
+                      <ul class="card__btn-list">
+                        <li
+                          ><button class="card__btn card__btn_non-active"
+                            >XS</button
+                          ></li
+                        >
+                        <li><button class="card__btn">S</button></li>
+                        <li><button class="card__btn">M</button></li>
+                        <li
+                          ><button class="card__btn card__btn_active"
+                            >L</button
+                          ></li
+                        >
+                        <li><button class="card__btn">XL</button></li>
+                        <li
+                          ><button class="card__btn card__btn_non-active"
+                            >2XL</button
+                          ></li
+                        >
+                        <li
+                          ><button class="card__btn card__btn_non-active"
+                            >3XL</button
+                          ></li
+                        >
+                      </ul>
+                      <button class="card-btn__select">ВЫБРАТЬ</button>
+                    </div>
+                  </article>
+                  <article class="card card__gift">
+                    <div class="card__body">
+                      <ul class="card__header">
+                        <li class="card__zoom">
+                          <button class="card__zoom-btn"></button>
+                        </li>
+                      </ul>
+                      <a class="card__img">
+                        <img src="./img/cards/image 1.png" alt="card-img" />
+                      </a>
+                    </div>
+                    <div class="card__footer">
+                      <p class="card__name">
+                        <span class="card__name_mobile">ФУТБОЛКА</span> HAUNTED
+                      </p>
+                      <ul class="card__btn-list">
+                        <li
+                          ><button class="card__btn card__btn_non-active"
+                            >XS</button
+                          ></li
+                        >
+                        <li><button class="card__btn">S</button></li>
+                        <li><button class="card__btn">M</button></li>
+                        <li
+                          ><button class="card__btn card__btn_active"
+                            >L</button
+                          ></li
+                        >
+                        <li><button class="card__btn">XL</button></li>
+                        <li
+                          ><button class="card__btn card__btn_non-active"
+                            >2XL</button
+                          ></li
+                        >
+                        <li
+                          ><button class="card__btn card__btn_non-active"
+                            >3XL</button
+                          ></li
+                        >
+                      </ul>
+                      <button class="card-btn__select">ВЫБРАТЬ</button>
+                    </div>
+                  </article>
+                </ul>
+                <button class="gift-btn__next">ДАЛЕЕ</button>
+              </ul>
+            </section>
           </div>
-          <button class="more__btn">
-            <span class="more__btn-text">ПОКАЗАТЬ ЕЩЁ</span>
-            <svg
-              width="14"
-              height="7"
-              viewBox="0 0 14 7"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <line
-                x1="12.9577"
-                y1="0.353553"
-                x2="6.74934"
-                y2="6.56195"
-                stroke="#191919"
-                class="svg-elem-1"
-              ></line>
-              <line
-                y1="-0.5"
-                x2="8.48528"
-                y2="-0.5"
-                transform="matrix(0.707107 0.707107 0.707107 -0.707107 1.60419 -9.53674e-07)"
-                stroke="#191919"
-                class="svg-elem-2"
-              ></line>
-            </svg>
-          </button>
         </section>
       </div>
     </main>

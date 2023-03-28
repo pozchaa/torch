@@ -4,6 +4,10 @@ import './filter'
 import './input'
 import './menu'
 import './swiper-home'
+import './swiper-product'
+import './product'
+import './gift'
+import './select-stuff'
 
 import '../styles/main-css/styles.scss'
 import '../styles/main-css/header.scss'
@@ -16,6 +20,10 @@ import '../styles/main-css/login.scss'
 import '../styles/main-css/register.scss'
 import '../styles/main-css/menu.scss'
 import '../styles/main-css/rules.scss'
+import '../styles/main-css/product.scss'
+import '../styles/main-css/gift.scss'
+import '../styles/main-css/cart.scss'
+import '../styles/main-css/kits.scss'
 import '../styles/main-css/svg-animation.scss'
 
 import '../styles/media-css/mobile-filter.scss'
@@ -27,6 +35,7 @@ import '../styles/media-css/tablet-header.scss'
 import '../styles/media-css/tablet-main.scss'
 import '../styles/media-css/tablet-styles.scss'
 import '../styles/media-css/tablet-swiper.scss'
+
 // import '../blocks/main/main.scss';
 // import '../blocks/feedback/feedback.scss';
 // import '../blocks/service-brands/service-brands.scss';

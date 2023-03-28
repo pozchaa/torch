@@ -133,6 +133,46 @@ module.exports = {
         collapseWhitespace: false
       }
     }),
+    new HtmlWebpackPlugin({
+      title: 'Product',
+      filename: 'product.html',
+      template: './src/product.html',
+      inject: true,
+      minify: {
+        removeComments: true,
+        collapseWhitespace: false
+      }
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Gift',
+      filename: 'gift.html',
+      template: './src/gift.html',
+      inject: true,
+      minify: {
+        removeComments: true,
+        collapseWhitespace: false
+      }
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Cart',
+      filename: 'cart.html',
+      template: './src/cart.html',
+      inject: true,
+      minify: {
+        removeComments: true,
+        collapseWhitespace: false
+      }
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Kit',
+      filename: 'kit.html',
+      template: './src/kit.html',
+      inject: true,
+      minify: {
+        removeComments: true,
+        collapseWhitespace: false
+      }
+    }),
     // Кладем стили в отдельный файлик
     new MiniCssExtractPlugin({
       filename: 'style.css'
