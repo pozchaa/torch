@@ -173,6 +173,36 @@ module.exports = {
         collapseWhitespace: false
       }
     }),
+    new HtmlWebpackPlugin({
+      title: 'Payment',
+      filename: 'payment.html',
+      template: './src/payment.html',
+      inject: true,
+      minify: {
+        removeComments: true,
+        collapseWhitespace: false
+      }
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Account',
+      filename: 'account.html',
+      template: './src/account.html',
+      inject: true,
+      minify: {
+        removeComments: true,
+        collapseWhitespace: false
+      }
+    }),
+    new HtmlWebpackPlugin({
+      title: 'ДАННЫЕ АККАУНТА',
+      filename: 'accountDataMobile.html',
+      template: './src/accountDataMobile.html',
+      inject: true,
+      minify: {
+        removeComments: true,
+        collapseWhitespace: false
+      }
+    }),
     // Кладем стили в отдельный файлик
     new MiniCssExtractPlugin({
       filename: 'style.css'

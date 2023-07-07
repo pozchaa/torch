@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.5/jquery.inputmask.min.js"
+    ></script>
+    <title>ДАННЫЕ АККАУНТА</title>
+  </head>
+  <body>
+    <header class="header_shadow">
+      <div class="container">
+        <nav class="navigation navigation-header">
+          <ul class="navigation-header__pages">
+            <li class="navigation-header__item navigation-header__item_black">
+              <a a href="#">КАТАЛОГ</a>
+            </li>
+            <li class="navigation-header__item navigation-header__item_black">
+              <a a href="#">LOOKBOOK</a>
+            </li>
+            <li class="navigation-header__item navigation-header__item_black">
+              <a a href="#">АКЦИИ И СКИДКИ</a>
+            </li>
+            <li class="navigation-header__item navigation-header__item_black">
+              <a a href="#">О НАС</a>
+            </li>
+          </ul>
+          <ul class="navigation-header__brands">
+            <li class="navigation-header__item navigation-header__item_black">
+              <a href="#">КÄISY</a>
+            </li>
+            <li class="navigation-header__item navigation-header__item_black">
+              <a href="#">ZIGATT</a>
+            </li>
+            <li class="navigation-header__item navigation-header__item_black">
+              <a href="#">FFF</a>
+            </li>
+            <li class="navigation-header__item navigation-header__item_black">
+              <a href="#">TORCHIEFF</a>
+            </li>
+          </ul>
+        </nav>
+        <section class="page-position header__mobile">
+          <div class="hamburger__body">
+            <a href="./"
+              ><svg
+                width="8"
+                height="14"
+                viewBox="0 0 8 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7 13L1 7L7 1"
+                  stroke="#090A0A"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="svg-header-arrow-1"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <h1 class="title title_black">
+            <a href="#">
+              <span class="title__visible">TORCH </span>
+              <span class="page">/ ОФОРМЛЕНИЕ ЗАКАЗА</span>
+              <span class="page__acc">ДАННЫЕ АККАУНТА</span>
+            </a>
+          </h1>
+          <ul class="visitor__list">
+            <li class="visitor__item visitor__item_search visitor__item_black">
+              <a href="#"
+                ><svg
+                  width="20"
+                  height="19"
+                  viewBox="0 0 20 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <line
+                    y1="-0.75"
+                    x2="6.74682"
+                    y2="-0.75"
+                    transform="matrix(0.707604 0.70661 -0.707604 0.70661 13.4545 13.4355)"
+                    stroke="#FBFBFB"
+                    stroke-width="1.5"
+                    class="svg-elem-1"
+                  ></line>
+                  <path
+                    d="M15.6942 8.21054C15.6942 12.3299 12.3498 15.6711 8.22209 15.6711C4.09437 15.6711 0.75 12.3299 0.75 8.21054C0.75 4.09119 4.09437 0.75 8.22209 0.75C12.3498 0.75 15.6942 4.09119 15.6942 8.21054Z"
+                    stroke="#FBFBFB"
+                    stroke-width="1.5"
+                    class="svg-elem-2"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li class="visitor__item visitor__item_user visitor__item_black">
+              <a href="#">
+                <svg
+                  width="16"
+                  height="19"
+                  viewBox="0 0 16 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.85761 17.4527C1.23276 13.8211 4.30205 10.989 8.03281 10.989C11.7636 10.989 14.8329 13.8211 15.208 17.4527H0.85761Z"
+                    stroke="#FBFBFB"
+                    stroke-width="1.5"
+                    class="svg--1 svg-user-1"
+                  ></path>
+                  <path
+                    d="M12.297 4.5507C12.297 6.62429 10.5459 8.35139 8.32776 8.35139C6.10967 8.35139 4.35852 6.62429 4.35852 4.5507C4.35852 2.47711 6.10967 0.75 8.32776 0.75C10.5459 0.75 12.297 2.47711 12.297 4.5507Z"
+                    stroke="#FBFBFB"
+                    stroke-width="1.5"
+                    class="svg--2 svg-user-2"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li class="visitor__item visitor__item_forever visitor__item_black">
+              <a href="#">
+                <svg
+                  width="22"
+                  height="21"
+                  viewBox="0 0 22 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.4852 17.7556L12.4851 17.7557C12.1769 18.0104 11.5807 18.4776 11.053 18.8877C10.8671 19.0322 10.6911 19.1685 10.5413 19.2842C10.3916 19.1685 10.2156 19.0322 10.0297 18.8877C9.50198 18.4776 8.90584 18.0104 8.59759 17.7557L8.59752 17.7556C7.46418 16.8194 6.08654 15.6239 4.82602 14.3747C3.55593 13.1161 2.4447 11.8418 1.80824 10.747L1.80798 10.7466C0.875907 9.14599 0.568501 7.15003 0.976399 5.29487L0.976461 5.29488L0.978438 5.2853C1.83183 1.14727 6.46279 -0.394426 9.27671 2.2565L9.27852 2.25819C9.43435 2.40402 9.58245 2.56987 9.76204 2.77205C9.83325 2.85226 9.90919 2.93774 9.98795 3.02384L10.5413 3.62881L11.0947 3.02384C11.1735 2.93775 11.2494 2.85231 11.3207 2.77207C11.5002 2.56988 11.6483 2.40402 11.8042 2.2582L11.806 2.25649C14.6199 -0.394427 19.2509 1.14727 20.1043 5.2853L20.1042 5.28531L20.1063 5.29487C20.5142 7.15002 20.2068 9.14599 19.2747 10.7466L19.2745 10.747C18.638 11.8418 17.5268 13.1161 16.2567 14.3747C14.9961 15.6239 13.6185 16.8194 12.4852 17.7556ZM10.0368 1.95773C9.95664 1.87231 9.87532 1.7895 9.791 1.71059L10.0368 1.95773Z"
+                    stroke="#191919"
+                    stroke-width="1.5"
+                    class="svg-forever-1"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="visitor__item visitor__item_cart visitor__item_black">
+              <a href="#"
+                ><svg
+                  width="21"
+                  height="19"
+                  viewBox="0 0 21 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <mask id="path-1-inside-1_74_431" fill="white">
+                    <path
+                      d="M5.46484 5.64914C5.46484 2.52921 7.99405 0 11.114 0C14.2339 0 16.7631 2.52921 16.7631 5.64914V5.82489H5.46484V5.64914Z"
+                      class="svg-cart-1"
+                    ></path>
+                  </mask>
+                  <path
+                    d="M3.96484 5.64914C3.96484 1.70078 7.16562 -1.5 11.114 -1.5C15.0623 -1.5 18.2631 1.70078 18.2631 5.64914H15.2631C15.2631 3.35763 13.4055 1.5 11.114 1.5C8.82248 1.5 6.96484 3.35763 6.96484 5.64914H3.96484ZM16.7631 5.82489H5.46484H16.7631ZM3.96484 5.82489V5.64914C3.96484 1.70078 7.16562 -1.5 11.114 -1.5V1.5C8.82248 1.5 6.96484 3.35763 6.96484 5.64914V5.82489H3.96484ZM11.114 -1.5C15.0623 -1.5 18.2631 1.70078 18.2631 5.64914V5.82489H15.2631V5.64914C15.2631 3.35763 13.4055 1.5 11.114 1.5V-1.5Z"
+                    fill="#FBFBFB"
+                    mask="url(#path-1-inside-1_74_431)"
+                    class="svg-cart-2 visitor__item_black-cart-path"
+                  ></path>
+                  <path
+                    d="M1.27185 8.20288C1.27185 13.3115 5.41322 17.4529 10.5219 17.4529H11C16.1086 17.4529 20.25 13.3115 20.25 8.20288V4.39065H1.27185V8.20288Z"
+                    stroke="#FBFBFB"
+                    stroke-width="1.5"
+                    class="svg-cart-3"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </header>
+    <ul class="menu">
+      <ul class="menu__wrap container">
+        <li class="menu__item"><a href="#">КАТАЛОГ</a></li>
+        <li class="menu__item"><a href="#">LOOKBOOK</a></li>
+        <li class="menu__item"><a href="#">АКЦИИ И СКИДКИ</a></li>
+        <li class="menu__item"><a href="#">О НАС</a></li>
+        <li class="menu__item">
+          <button class="menu__btn menu__shipping-btn"
+            >ОПЛАТА, ДОСТАВКА И ВОЗВРАТ</button
+          >
+        </li>
+        <ul class="menu__shipping_more hidden">
+          <ul class="menu__pay">
+            <li class="menu__item">ОПЛАТА</li>
+            <li class="menu__item"
+              ><p class="menu__text">Оплата осуществляется с помощью:</p></li
+            >
+            <li class="menu__item">
+              <p class="menu__text">
+                Банковских карт VISA, MasterCard, МИР; Интернет кошельков
+                PayPal, QIWI.
+              </p>
+            </li>
+          </ul>
+          <ul class="menu__transfer">
+            <li class="menu__item">ДОСТАВКА</li>
+          </ul>
+          <ul class="menu__return">
+            <li class="menu__item">ВОЗВРАТ</li>
+          </ul>
+        </ul>
+
+        <li class="menu__item"><a href="#">БОНУСНАЯ ПРОГРАММА</a></li>
+        <li class="menu__item"><a href="#">ПРАВОВАЯ ИНФОРМАЦИЯ</a></li>
+        <li class="menu__item"
+          ><button class="menu__btn menu__contacts-btn">КОНТАКТЫ</button></li
+        >
+        <ul class="menu__contacts_more hidden">
+          <li class="menu__item">
+            <button class="menu__btn menu__contacts-btn_close">КОНТАКТЫ</button>
+          </li>
+          <li class="menu__item">
+            <p class="menu__text">
+              По вопросам интернет магазина, обмена и возврата:
+              <a href="mailto:ordertorch@list.ru">ordertorch@list.ru</a>
+            </p>
+          </li>
+          <li class="menu__item">
+            <p class="menu__text">
+              По вопросам сотрудничества и предложениям:
+              <a href="mailto:torch_torchg@list.ru">torch_torchg@list.ru</a>
+            </p>
+          </li>
+          <li class="menu__item">
+            <p class="menu__text">
+              <a href="tel:+79660668192">+7 (966) 066 81 92</a> Пн-Пт:
+              11:00-21:00
+            </p>
+          </li>
+          <li class="menu__item"><a href="#">Реквизиты</a></li>
+        </ul>
+      </ul>
+    </ul>
+    <form
+      id="accountPersonalData"
+      action=""
+      method="post"
+      class="account__form_mobile account__form-personal_mobile account__form-personal_mobile-active"
+    >
+      <h2>ЛИЧНЫЕ ДАННЫЕ</h2>
+      <ul class="personal__inputs">
+        <li>
+          <input
+            id="personalInput"
+            class=""
+            type="text"
+            name="name"
+            placeholder="Имя"
+          />
+          <button class="input__clear">
+            <svg
+              width="13"
+              height="13"
+              viewBox="0 0 13 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M6.5 13C10.0899 13 13 10.0898 13 6.5C13 2.91021 10.0899 0 6.5 0C2.91014 0 0 2.91021 0 6.5C0 10.0898 2.91014 13 6.5 13ZM9.37964 3.6204C9.61857 3.85919 9.61857 4.24658 9.37964 4.48555L7.36517 6.5L9.37964 8.51445C9.61854 8.75342 9.61854 9.14081 9.37964 9.3796C9.14074 9.61857 8.7534 9.61857 8.51447 9.3796L6.5 7.36515L4.48553 9.3796C4.24663 9.61857 3.85928 9.61857 3.62036 9.3796C3.38146 9.14081 3.38146 8.75342 3.62036 8.51445L5.63483 6.5L3.62036 4.48555C3.38146 4.24658 3.38146 3.85919 3.62036 3.6204C3.85926 3.38143 4.24661 3.38143 4.48553 3.6204L6.5 5.63485L8.51447 3.6204C8.7534 3.38143 9.14074 3.38143 9.37964 3.6204Z"
+                fill="#8E8E93"
+              />
+            </svg>
+          </button>
+        </li>
+        <li>
+          <input
+            id="personalInput"
+            class=""
+            type="text"
+            name="name"
+            placeholder="Фамилия"
+          />
+          <button class="input__clear">
+            <svg
+              width="13"
+              height="13"
+              viewBox="0 0 13 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M6.5 13C10.0899 13 13 10.0898 13 6.5C13 2.91021 10.0899 0 6.5 0C2.91014 0 0 2.91021 0 6.5C0 10.0898 2.91014 13 6.5 13ZM9.37964 3.6204C9.61857 3.85919 9.61857 4.24658 9.37964 4.48555L7.36517 6.5L9.37964 8.51445C9.61854 8.75342 9.61854 9.14081 9.37964 9.3796C9.14074 9.61857 8.7534 9.61857 8.51447 9.3796L6.5 7.36515L4.48553 9.3796C4.24663 9.61857 3.85928 9.61857 3.62036 9.3796C3.38146 9.14081 3.38146 8.75342 3.62036 8.51445L5.63483 6.5L3.62036 4.48555C3.38146 4.24658 3.38146 3.85919 3.62036 3.6204C3.85926 3.38143 4.24661 3.38143 4.48553 3.6204L6.5 5.63485L8.51447 3.6204C8.7534 3.38143 9.14074 3.38143 9.37964 3.6204Z"
+                fill="#8E8E93"
+              />
+            </svg>
+          </button>
+        </li>
+        <li>
+          <input
+            id="personalInput"
+            class=""
+            type="text"
+            name="name"
+            placeholder="Отчество"
+          />
+          <button class="input__clear">
+            <svg
+              width="13"
+              height="13"
+              viewBox="0 0 13 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M6.5 13C10.0899 13 13 10.0898 13 6.5C13 2.91021 10.0899 0 6.5 0C2.91014 0 0 2.91021 0 6.5C0 10.0898 2.91014 13 6.5 13ZM9.37964 3.6204C9.61857 3.85919 9.61857 4.24658 9.37964 4.48555L7.36517 6.5L9.37964 8.51445C9.61854 8.75342 9.61854 9.14081 9.37964 9.3796C9.14074 9.61857 8.7534 9.61857 8.51447 9.3796L6.5 7.36515L4.48553 9.3796C4.24663 9.61857 3.85928 9.61857 3.62036 9.3796C3.38146 9.14081 3.38146 8.75342 3.62036 8.51445L5.63483 6.5L3.62036 4.48555C3.38146 4.24658 3.38146 3.85919 3.62036 3.6204C3.85926 3.38143 4.24661 3.38143 4.48553 3.6204L6.5 5.63485L8.51447 3.6204C8.7534 3.38143 9.14074 3.38143 9.37964 3.6204Z"
+                fill="#8E8E93"
+              />
+            </svg>
+          </button>
+        </li>
+        <li>
+          <input
+            id="personalInput"
+            class=""
+            type="email"
+            name="email"
+            required
+            placeholder="Email"
+          />
+          <button class="input__clear">
+            <svg
+              width="13"
+              height="13"
+              viewBox="0 0 13 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M6.5 13C10.0899 13 13 10.0898 13 6.5C13 2.91021 10.0899 0 6.5 0C2.91014 0 0 2.91021 0 6.5C0 10.0898 2.91014 13 6.5 13ZM9.37964 3.6204C9.61857 3.85919 9.61857 4.24658 9.37964 4.48555L7.36517 6.5L9.37964 8.51445C9.61854 8.75342 9.61854 9.14081 9.37964 9.3796C9.14074 9.61857 8.7534 9.61857 8.51447 9.3796L6.5 7.36515L4.48553 9.3796C4.24663 9.61857 3.85928 9.61857 3.62036 9.3796C3.38146 9.14081 3.38146 8.75342 3.62036 8.51445L5.63483 6.5L3.62036 4.48555C3.38146 4.24658 3.38146 3.85919 3.62036 3.6204C3.85926 3.38143 4.24661 3.38143 4.48553 3.6204L6.5 5.63485L8.51447 3.6204C8.7534 3.38143 9.14074 3.38143 9.37964 3.6204Z"
+                fill="#8E8E93"
+              />
+            </svg>
+          </button>
+        </li>
+        <li>
+          <input
+            id="personalInput"
+            class="phone-field"
+            type="text"
+            name="phone"
+            placeholder="Телефон"
+            required
+          />
+          <button class="input__clear">
+            <svg
+              width="13"
+              height="13"
+              viewBox="0 0 13 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M6.5 13C10.0899 13 13 10.0898 13 6.5C13 2.91021 10.0899 0 6.5 0C2.91014 0 0 2.91021 0 6.5C0 10.0898 2.91014 13 6.5 13ZM9.37964 3.6204C9.61857 3.85919 9.61857 4.24658 9.37964 4.48555L7.36517 6.5L9.37964 8.51445C9.61854 8.75342 9.61854 9.14081 9.37964 9.3796C9.14074 9.61857 8.7534 9.61857 8.51447 9.3796L6.5 7.36515L4.48553 9.3796C4.24663 9.61857 3.85928 9.61857 3.62036 9.3796C3.38146 9.14081 3.38146 8.75342 3.62036 8.51445L5.63483 6.5L3.62036 4.48555C3.38146 4.24658 3.38146 3.85919 3.62036 3.6204C3.85926 3.38143 4.24661 3.38143 4.48553 3.6204L6.5 5.63485L8.51447 3.6204C8.7534 3.38143 9.14074 3.38143 9.37964 3.6204Z"
+                fill="#8E8E93"
+              />
+            </svg>
+          </button>
+        </li>
+      </ul>
+      <div class="personal__btns">
+        <button class="personal__exit">ОТМЕНИТЬ</button>
+        <button class="personal__complete_mobile">ИЗМЕНИТЬ</button>
+      </div>
+    </form>
+    <!-- <form
+      id="accountAddress"
+      action=""
+      method="post"
+      class="account__form_mobile account__form-address_mobile account__form-personal_address-active"
+    >
+      <h2>АДРЕС</h2>
+      <ul class="personal__inputs">
+        <li>
+          <input
+            id="personalInput"
+            class=""
+            type="text"
+            name="name"
+            placeholder="Страна"
+          />
+        </li>
+        <li>
+          <input
+            id="personalInput"
+            class=""
+            type="text"
+            name="name"
+            placeholder="Город"
+          />
+        </li>
+        <li>
+          <input
+            id="personalInput"
+            class=""
+            type="text"
+            name="name"
+            placeholder="Улица"
+          />
+        </li>
+        <li>
+          <input
+            id="personalInput"
+            class=""
+            type="text"
+            name="name"
+            placeholder="Дом"
+          />
+        </li>
+        <li>
+          <input
+            id="personalInput"
+            class=""
+            type="text"
+            name="name"
+            placeholder="Индекс"
+          />
+        </li>
+      </ul>
+      <button class="personal__complete">СОХРАНИТЬ</button>
+    </form> -->
+    <main class="overlay">
+      <div class="container">
+        <div class="account">
+          <div class="account__info_mobile">
+            <div class="account__person_mobile">
+              <h2>ЛИЧНЫЕ ДАННЫЕ</h2>
+              <ul>
+                <li>
+                  <p>Имя: <span>Теймур</span></p>
+                </li>
+                <li>
+                  <p>Фамилия: <span>Алиев</span></p>
+                </li>
+                <li>
+                  <p>Отчество: <span>-</span></p>
+                </li>
+                <li>
+                  <p>Email: <span>torch_torch@list.ru</span></p>
+                </li>
+                <li>
+                  <p>Телефон: <span>+7 (945) 275-04-63</span></p>
+                </li>
+              </ul>
+              <button class="account__person-btn_mobile">ИЗМЕНИТЬ</button>
+            </div>
+            <div class="account__address_mobile">
+              <h2>АДРЕС</h2>
+              <ul>
+                <li>
+                  <p>Страна: <span>-</span></p>
+                </li>
+                <li>
+                  <p>Город: <span>-</span></p>
+                </li>
+                <li>
+                  <p>Улица: <span>-</span></p>
+                </li>
+                <li>
+                  <p>Дом: <span>-</span></p>
+                </li>
+                <li>
+                  <p>Индекс: <span>-</span></p>
+                </li>
+              </ul>
+              <button class="account__address-btn_mobile">ДОБАВИТЬ</button>
+            </div>
+            <div class="account__address_mobile">
+              <h2>СОЦИАЛЬНЫЕ СЕТИ</h2>
+              <input
+                class="login__input login__input-vk account__login-vk"
+                type="submit"
+                value="ВОЙТИ С ВКОНТАКТЕ"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer__body footer__mobile">
+          <ul class="footer__list">
+            <li>
+              <a class="footer__home-btn" href="#"
+                ><svg
+                  width="21"
+                  height="22"
+                  viewBox="0 0 21 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 8L10.5 1L20 8V19C20 19.5304 19.7776 20.0391 19.3817 20.4142C18.9858 20.7893 18.4488 21 17.8889 21H3.11111C2.55121 21 2.01424 20.7893 1.61833 20.4142C1.22242 20.0391 1 19.5304 1 19V8Z"
+                    stroke="#949494"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="svg-footer-home-1"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="footer__forever-btn" href="#"
+                ><svg
+                  width="26"
+                  height="26"
+                  viewBox="0 0 26 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.7697 21.9175C18.3845 19.8446 22.1579 16.5994 23.7304 14.004C24.9069 12.0651 25.2898 9.66284 24.778 7.42928C23.6846 2.34144 17.6298 0.262426 13.8582 3.67199C13.6461 3.86248 13.4506 4.07366 13.2499 4.2905C13.168 4.379 13.0852 4.46843 13 4.55778C12.9148 4.46843 12.832 4.37899 12.7501 4.29049C12.5494 4.07366 12.3539 3.86248 12.1418 3.67199C8.37024 0.262426 2.31542 2.34144 1.222 7.42928C0.710233 9.66284 1.09302 12.0651 2.26966 14.004C3.8421 16.5994 7.61553 19.8446 10.2304 21.9175C10.9589 22.4952 13 24 13 24C13 24 15.0411 22.4952 15.7697 21.9175Z"
+                    fill="none"
+                    stroke="#949494"
+                    stroke-width="2"
+                    class="svg-footer-forever-1"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="footer__cart-btn" href="#"
+                ><svg
+                  width="24"
+                  height="22"
+                  viewBox="0 0 24 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <mask id="path-1-inside-1_443_64" fill="white">
+                    <path
+                      d="M5.61215 6C5.61215 2.68629 8.29844 0 11.6122 0H12.44C15.7537 0 18.44 2.68629 18.44 6V6.98247H5.61215V6Z"
+                      class="svg-footer-cart-1"
+                    ></path>
+                  </mask>
+                  <path
+                    d="M3.61215 6C3.61215 1.58172 7.19387 -2 11.6122 -2H12.44C16.8583 -2 20.44 1.58172 20.44 6H16.44C16.44 3.79086 14.6491 2 12.44 2H11.6122C9.40301 2 7.61215 3.79086 7.61215 6H3.61215ZM18.44 6.98247H5.61215H18.44ZM3.61215 6.98247V6C3.61215 1.58172 7.19387 -2 11.6122 -2V2C9.40301 2 7.61215 3.79086 7.61215 6V6.98247H3.61215ZM12.44 -2C16.8583 -2 20.44 1.58172 20.44 6V6.98247H16.44V6C16.44 3.79086 14.6491 2 12.44 2V-2Z"
+                    fill="#949494"
+                    mask="url(#path-1-inside-1_443_64)"
+                    class="svg-footer-cart-2"
+                  ></path>
+                  <path
+                    d="M1 11.8198C1 16.7904 5.02944 20.8198 10 20.8198H13.2505C18.221 20.8198 22.2505 16.7904 22.2505 11.8198V5.36365H1V11.8198Z"
+                    stroke="#949494"
+                    stroke-width="2"
+                    class="svg-footer-cart-3"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__body footer__desktop">
+          <ul class="footer__list">
+            <li class="footer__list-item"
+              ><a href="#">ОПЛАТА, ДОСТАВКА И ВОЗВРАТ</a></li
+            >
+            <li class="footer__list-item"
+              ><a href="#">БОНУСНАЯ ПРОГРАММА</a></li
+            >
+            <li class="footer__list-item"
+              ><a href="#">ПРАВОВАЯ ИНФОРМАЦИЯ</a></li
+            >
+            <li class="footer__list-item"><a href="#">ОТЗЫВЫ</a></li>
+            <li class="footer__list-item"><a href="#">КОНТАКТЫ</a></li>
+          </ul>
+          <ul class="footer__contacts">
+            <li class="footer__contacts-item">
+              <a class="footer__contacts-vk" href="#"> </a>
+            </li>
+            <li class="footer__contacts-item">
+              <a class="footer__contacts-inst" href="#"></a>
+            </li>
+            <li class="footer__contacts-item">
+              <a class="footer__contacts-tg" href="#"></a>
+            </li>
+            <li class="footer__contacts-item">
+              <a class="footer__contacts-youtube" href="#"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript">
+      $('.phone-field').inputmask('+7 (999) 999-99-99')
+      jQuery.validator.addMethod('checkMaskPhone', function (value, element) {
+        return /\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value)
+      })
+      var form = $('.form-request')
+      form.validate()
+      $.validator.addClassRules({
+        'phone-field': {
+          checkMaskPhone: true
+        }
+      })
+    </script>
+  </body>
+</html>
